@@ -1,0 +1,80 @@
+.n-swiper,
+.n-swiper-cards {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding: 0 18px 3rem 18px;
+    margin: 1.5rem -18px;
+}
+
+.n-swiper .swiper-wrapper {
+    align-items: stretch;
+}
+
+.n-swiper-cards .swiper-wrapper {
+    display: flex;
+    margin-left: -18px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--toyota-black-900);
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    display: none;
+    content: none;
+}
+
+.swiper-button-prev img {
+    transform: rotate(180deg);
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination {
+    bottom: -3rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--toyota-black-300);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--toyota-black-900);
+    opacity: 1;
+}
+
+.n-swiper-list .swiper-pagination {
+    display: none;
+}
+
+@media screen and (min-width: 991px) {
+
+    .n-swiper-cards .swiper-wrapper {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1.5rem;
+    }
+
+    .n-list-car-select .swiper-button-next,
+    .n-list-car-select .swiper-button-prev {
+        display: none;
+    }
+
+    .n-swiper-list .swiper-pagination {
+        display: block;
+    }
+
+}

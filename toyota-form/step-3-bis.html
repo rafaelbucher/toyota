@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    
+    <!-- BEGIN - CODE TO REPLACE -->
+    <section class="n-section n-section--full n-section--no-margin">
+
+        <div class="n-multi-step">
+            <ul>
+                <li class="n-checked">
+                    <a href="./step-1.html">
+                        <span data-step="1"></span>
+                        <span>Informations véhicules</span>
+                    </a>
+                </li>
+                <li class="n-checked">
+                    <a href="./step-2.html">
+                        <span data-step="2"></span>
+                        <span>Votre profil</span>
+                    </a>
+                </li>
+                <li class="n-active">
+                    <a href="./step-3.html">
+                        <span data-step="3"></span>
+                        <span>Besoin d'un véhicule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./step-4.html">
+                        <span data-step="4"></span>
+                        <span>Estimation</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+    </section>
+    <!-- END - CODE TO REPLACE -->
+
+
+    <section class="n-section">
+
+        <form class="n-form-toyota">
+
+            <h2 class="n-headline-2">Avez-vous besoin d’aquérir un nouveau véhicule ?</h2>
+            <h3 class="n-headline-3">Faites votre choix</h3>
+            
+            <fieldset class="n-form-toyota__fieldset n-form-toyota__fieldset--no-column">
+
+                <div class="n-form-toyota__control">
+                    <div class="n-form-radio-group n-form-radio-group--custom">
+                        <div class="n-form-radio-button n-form-radio-button--custom" for="new-car">
+                            <input class="n-radio" type="radio" name="radio-button" id="radio-1">
+                            <label for="radio-1">Oui, un véhicule neuf</label>
+                        </div>
+                        <div class="n-form-radio-button n-form-radio-button--custom" for="new-car">
+                            <input class="n-radio" type="radio" name="radio-button" id="radio-2" checked>
+                            <label for="radio-2">Oui, un véhicule d'occasion</label>
+                        </div>
+                        <div class="n-form-radio-button n-form-radio-button--custom" for="new-car">
+                            <input class="n-radio" type="radio" name="radio-button" id="radio-3">
+                            <label for="radio-3">Non</label>
+                        </div>
+                    </div>
+                </div>
+            
+            </fieldset>
+
+
+            <div class="n-header">
+                <h3 class="n-headline-3">Nous avons trouvé des occassions qui vous correspondent</h3>
+                <p>Les véhicules affichés sont présélectionnés selon le concessionnaire choisi précédemment</p>
+            </div>
+
+            <div class="n-group-field n-group-field--three-col">
+                
+                <div>
+                    <label for="brand">Quelle marque recherchez-vous ?</label>
+                    <select name="select" id="brand" class="n-form-select">
+                        <option value="Marque">Marque</option>
+                        <option value="XXX">XXX</option>
+                        <option value="XXX">XXX</option>
+                        <option value="XXX">XXX</option>
+                        <option value="XXX">XXX</option>
+                        <option value="XXX">XXX</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="model">Quel modèle recherchez-vous ?</label>
+                    <select name="select" id="model" class="n-form-select">
+                        <option value="Modèle">Modèle</option>
+                        <option value="XXX">XXX</option>
+                        <option value="XXX">XXX</option>
+                        <option value="XXX">XXX</option>
+                        <option value="XXX">XXX</option>
+                        <option value="XXX">XXX</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="price">Quel est votre budget ?</label>
+                    <select name="select" id="price" class="n-form-select">
+                        <option value="Prix / Loyer">Prix / Loyer</option>
+                        <option value="XXX">XXX</option>
+                        <option value="XXX">XXX</option>
+                        <option value="XXX">XXX</option>
+                        <option value="XXX">XXX</option>
+                        <option value="XXX">XXX</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+        <div class="n-swiper n-swiper-list swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input class="n-checkbox n-checkbox--light" type="checkbox" id="button-checkbox-1">
+                            <label for="button-checkbox-1">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input class="n-checkbox n-checkbox--light" type="checkbox" id="button-checkbox-2">
+                            <label for="button-checkbox-2">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input class="n-checkbox n-checkbox--light" type="checkbox" id="button-checkbox-3">
+                            <label for="button-checkbox-3">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input class="n-checkbox n-checkbox--light" type="checkbox" id="button-checkbox-4">
+                            <label for="button-checkbox-4">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input class="n-checkbox n-checkbox--light" type="checkbox" id="button-checkbox-5">
+                            <label for="button-checkbox-5">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input class="n-checkbox n-checkbox--light" type="checkbox" id="button-checkbox-6">
+                            <label for="button-checkbox-6">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input class="n-checkbox n-checkbox--light" type="checkbox" id="button-checkbox-7">
+                            <label for="button-checkbox-7">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input class="n-checkbox n-checkbox--light" type="checkbox" id="button-checkbox-8">
+                            <label for="button-checkbox-8">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input class="n-checkbox n-checkbox--light" type="checkbox" id="button-checkbox-9">
+                            <label for="button-checkbox-9">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev">
+                <img src="./img/icons/arrow-right.svg" alt="Button Prev" />
+            </div>
+            <div class="swiper-button-next">
+                <img src="./img/icons/arrow-right.svg" alt="Button Next" />
+            </div>
+
+        </div>
+
+            
+        <div class="n-group-button n-group-button--center">
+            <button type="button" class="n-button n-button-outline n-button--large">
+                <div>
+                  <input class="n-checkbox" type="checkbox" id="button-checkbox">
+                  <label for="button-checkbox">Je ne trouve pas mon bonheur</label>
+                </div>
+            </button>
+        </div>
+
+            
+        <div class="n-group-button">
+            <button class="n-button n-button-outline n-button--large n-button--icon-left" type="button">Retour</button>
+            <button class="n-button n-button--large n-button--icon-right" type="submit" disabled>Votre estimation</button>
+        </div>
+
+            <div class="n-form-notice n-form-notice--highlight n-form-notice--icon" id="n-form-notice">
+                <p>Nouvelle Toyota Yaris HybrideGamme Yaris Hybride : Consommations (L/100 km) et émission de CO2 (g/km) en conditions mixtes selon norme WLTP : 3,8 à 4,3 et 87 à 98.2 500€ TTC de Prime à l'Hybride Toyota pour toute commande d'une Yaris Hybride neuve.Offre réservée aux particuliers, non cumulable avec toute autre offre en cours et valable pour toute Yaris Hybride neuve commandée du 03/04/2024 au 03/06/2024 dans le réseau Toyota participant.</p>
+                <p>UN CREDIT VOUS ENGAGE ET DOIT ÊTRE REMBOURSE. VERIFIEZ VOS CAPACITES DE REMBOURSEMENT AVANT DE VOUS ENGAGER.</p>
+                <p>Yaris 5 portes Hybride 1.5L (116 ch) Transmission variable en continu à gestion électronique (2WD) Collection au prix facturé de 26950€. A partir de 359 €/mois. 1er loyer de 4.650 €. Entretien inclus dans la limite de 37 mois & 30 000 km.</p>
+                <p>EASY PLUS(2) est la solution conçue pour votre mobilité :<br>
+                    - Bénéficiez d’un véhicule entretenu et garanti<br>
+                    - Maîtrisez votre budget auto<br>
+                    - Repartez à bord d’un nouveau véhicule tous les 3 ans<br>
+                </p>
+                <p>(1) Exemple pour une Yaris 5 portes Hybride 1.5L (116 ch) Transmission variable en continu à gestion électronique (2WD) Collection au prix facturé de 26950€, après une remise de 2.500 € . 1er loyer de 4.650 €. Option d'achat : 17.497 € dans la limite de 37 mois & 30 000 km. Montant total dû en cas d’acquisition : 35.070 €. Les montants ci-dessus sont exprimés TTC et assurances facultatives incluses si sélectionnées. Le premier loyer sera réglé à la livraison. En fin de contrat, restitution du véhicule dans votre concession avec paiement des frais de remise en état standard et des éventuels kilomètres excédentaires. Offre valable jusqu'au 03/06/2024 inclus. Assurance de Personnes : 32,34 € en plus de votre loyer, soit 1 196,58 € sur la durée totale du prêt. Offre réservée aux particuliers, valable chez les distributeurs Toyota participants et portant sur le tarif en vigueur au jour de la souscription du contrat. Cette simulation est non contractuelle et ne constitue ni une offre préalable de crédit, ni un bon de commande, ni une promesse de vente au sens des dispositions du droit de la consommation. Sous réserve d’acceptation par TOYOTA France FINANCEMENT, 36 bd de la République 92423 Vaucresson, RCS 412 653 180 - intermédiaire d’assurance européen : n° D-P3GY-MUFY9-27 consultable sur www.orias.fr.</p>
+                <p>(2) La solution EASY PLUS comprend l'entretien, la garantie, l'assistance et un engagement de reprise concessionnaire dans la limite prévue au contrat (au 1er des 2 termes atteint). Pour en savoir plus, rendez-vous sur https://www.toyota-financement.fr/.</p>
+            </div>  
+
+        </form>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+  </body>
+
+</html>

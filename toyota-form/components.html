@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Components List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+
+
+    <section class="n-section">
+
+        <h1 class="n-headline-1">Components</h1>
+
+    </section>
+
+    <section class="n-section n-section--full n-section--bg-dark">
+
+        <div class="n-multi-step">
+            <ul>
+                <li class="n-checked">
+                    <a href="./step-1.html">
+                        <span data-step="1"></span>
+                        <span>Informations véhicules</span>
+                    </a>
+                </li>
+                <li class="n-checked">
+                    <a href="./step-2.html">
+                        <span data-step="2"></span>
+                        <span>Votre profil</span>
+                    </a>
+                </li>
+                <li class="n-active">
+                    <a href="./step-3.html">
+                        <span data-step="3"></span>
+                        <span>Besoin d'un véhicule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./step-4.html">
+                        <span data-step="4"></span>
+                        <span>Estimation</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- BEGIN - code to insert -->
+    <section class="n-section n-section--full n-section--no-margin">
+        <div class="n-progress">
+            <progress class="n-progress__bar" max="100" value="70">70%</progress>
+        </div>
+    </section>
+    <!-- END - code to insert -->
+
+    <section class="n-section">
+
+        <h2 class="n-headline-2">Custom Checkbox</h2>
+        
+        <div class="n-group-radio">
+
+            <div>
+              <input class="n-checkbox" type="checkbox" id="checkbox-1" checked>
+              <label for="checkbox-1">Option 1</label>
+            </div>
+      
+            <div>
+              <input class="n-checkbox" type="checkbox" id="checkbox-2">
+              <label for="checkbox-2">Option 2</label>
+            </div>
+      
+            <div>
+              <input class="n-checkbox" type="checkbox" id="checkbox-3">
+              <label for="checkbox-3">Option 3</label>
+            </div>
+
+        </div>
+
+        <h2 class="n-headline-2">Custom Radio</h2>
+        
+        <div class="n-group-radio">
+
+            <div>
+              <input class="n-radio" type="radio" name="radio-button" id="radio-1">
+              <label for="radio-1">Choice 1</label>
+            </div>
+
+            <div>
+              <input class="n-radio" type="radio" name="radio-button" id="radio-2">
+              <label for="radio-2">Choice 2</label>
+            </div>
+
+            <div>
+              <input class="n-radio" type="radio" name="radio-button" id="radio-3">
+              <label for="radio-3">Choice 3</label>
+            </div>
+
+        </div>
+        
+        <h2 class="n-headline-2">Custom Input Text</h2>
+
+        <div class="n-group-field">
+            <input type="text" class="n-form-text" value="Text" disabled required/>
+            <input type="text" class="n-form-text" value="Text" required/>
+            <input type="tel" class="n-form-text" value="Number" required/>
+        </div>
+
+        <h2 class="n-headline-2">Custom Select</h2>
+
+        <div class="n-group-field">
+        
+            <select name="select" id="select" class="n-form-select">
+                <option value="text">Text</option>
+                <option value="lupo">Lupo</option>
+                <option value="golf">Golf</option>
+                <option value="polo" selected>Polo</option>
+                <option value="grand-california">Grand California</option>
+                <option value="sirocco">Sirocco</option>
+            </select>
+
+            <select name="select" id="select-2" class="n-form-select" disabled>
+                <option value="text">Text</option>
+                <option value="lupo">Lupo</option>
+                <option value="golf">Golf</option>
+                <option value="polo">Polo</option>
+                <option value="grand-california">Grand California</option>
+                <option value="sirocco">Sirocco</option>
+            </select>
+
+        </div>
+
+        <h2 class="n-headline-2">Custom Button</h2>
+
+
+        <div class="n-group-button">
+
+            <button type="button" class="n-button n-button--large" disabled>Button</button>
+
+            <button type="button" class="n-button n-button--large" disabled>Button</button>
+
+            <button type="button" class="n-button n-button--large">Button</button>
+
+            <button type="button" class="n-button n-button--large n-button--icon-right">Button</button>            
+            
+            <button type="button" class="n-button n-button--large n-button--icon-left">Button</button>
+
+            <button type="button" class="n-button n-button-outline n-button--large" disabled>Button</button>
+
+            <button type="button" class="n-button n-button-outline n-button--large">Button</button>
+
+            <button type="button" class="n-button n-button-outline n-button--large n-button--icon-right">Button</button>            
+            
+            <button type="button" class="n-button n-button-outline n-button--large n-button--icon-left">Button</button>            
+
+        </div>
+
+        <button type="button" class="n-button n-button-outline n-button--large">
+            <div>
+              <input class="n-checkbox" type="checkbox" id="button-checkbox">
+              <label for="button-checkbox">Button with checkbox</label>
+            </div>
+        </button>
+
+    </section>
+
+    <section class="n-section">
+
+        <h2 class="n-headline-2">Custom tooltip</h2>
+        
+        <div>
+            <button class="n-button-tooltip" aria-describedby="tooltip">
+                <img src="./img/icons/info-circle-outline.svg" alt="Info icon" />
+            </button>
+            <div class="n-tooltip" role="tooltip">
+                <p>Gamme Aygo X : consommations mixtes combinées (L/100 km) et émissions de CO2 combinées (g/km) selon norme WLTP : de 4,8 à 5,0 et de 108 à 114.2 000€ TTC de remise pour toute commande d'une Toyota Aygo X neuve.Offre réservée aux particuliers, non cumulable avec toute autre offre en cours et valable pour toute Aygo X neuve commandée commandée du 03/04/2024 au 03/06/2024 dans le réseau Toyota participant.</p>
+                <p>Les modèles sont présentés à titre purement illustratif. Les finitions, spécifications, options, packs et accessoires du véhicule peuvent différer du véhicule présenté.</p>
+                <div class="n-arrow" data-popper-arrow></div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="n-section">
+
+        <div class="n-swiper n-swiper-cards swiper">
+
+            <div class="swiper-wrapper">
+                
+                <div class="n-card n-card--checked swiper-slide">
+                    <p class="n-card__discount">Actuellement 2000 € d'avantage</p>
+                    <img src="./img/car.png" alt="Toyota car"/>
+                    <div class="n-card__spec">
+                        <h3>
+                            <span>Hybride</span>
+                            Yaris
+                        </h3>
+                        <div class="n-card__price">
+                            <p>
+                                <span class="n-text-line-through n-text-gray">18 900 €</span>
+                                <span>
+                                    16 900 € 
+                                    <a href="#n-form-notice">
+                                        <img src="./img/icons/info-circle.svg" class="n-card__tooltip" />
+                                    </a>
+                                </span>
+                            </p>
+                            <p>                         
+                                <div>
+                                    <button class="n-button-tooltip" aria-describedby="tooltip">
+                                        <img src="./img/icons/info-circle-outline.svg" alt="Info icon" />
+                                    </button>
+                                    <div class="n-tooltip" role="tooltip">
+                                        <p>Gamme Aygo X : consommations mixtes combinées (L/100 km) et émissions de CO2 combinées (g/km) selon norme WLTP : de 4,8 à 5,0 et de 108 à 114.2 000€ TTC de remise pour toute commande d'une Toyota Aygo X neuve.Offre réservée aux particuliers, non cumulable avec toute autre offre en cours et valable pour toute Aygo X neuve commandée commandée du 03/04/2024 au 03/06/2024 dans le réseau Toyota participant.</p>
+                                        <p>Les modèles sont présentés à titre purement illustratif. Les finitions, spécifications, options, packs et accessoires du véhicule peuvent différer du véhicule présenté.</p>
+                                        <div class="n-arrow" data-popper-arrow></div>
+                                    </div>
+                                </div>
+                                À partir de                               
+                                <span class="n-text-line-through n-text-gray">185 € /mois</span>
+                                <span class="n-text-gray">185 € /mois</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="n-card swiper-slide">
+                    <p class="n-card__discount">Actuellement 2000 € d'avantage</p>
+                    <img src="./img/car.png" alt="Toyota car"/>
+                    <div class="n-card__spec">
+                        <h3>
+                            <span>Hybride</span>
+                            Yaris
+                        </h3>
+                        <div class="n-card__price">
+                            <p>
+                                <span class="n-text-line-through n-text-gray">18 900 €</span>
+                                <span>
+                                    16 900 € 
+                                    <a href="#n-form-notice">
+                                        <img src="./img/icons/info-circle.svg" class="n-card__tooltip" />
+                                    </a>
+                                </span>
+                            </p>
+                            <p>                         
+                                <div>
+                                    <button class="n-button-tooltip" aria-describedby="tooltip">
+                                        <img src="./img/icons/info-circle-outline.svg" alt="Info icon" />
+                                    </button>
+                                    <div class="n-tooltip" role="tooltip">
+                                        <p>Gamme Aygo X : consommations mixtes combinées (L/100 km) et émissions de CO2 combinées (g/km) selon norme WLTP : de 4,8 à 5,0 et de 108 à 114.2 000€ TTC de remise pour toute commande d'une Toyota Aygo X neuve.Offre réservée aux particuliers, non cumulable avec toute autre offre en cours et valable pour toute Aygo X neuve commandée commandée du 03/04/2024 au 03/06/2024 dans le réseau Toyota participant.</p>
+                                        <p>Les modèles sont présentés à titre purement illustratif. Les finitions, spécifications, options, packs et accessoires du véhicule peuvent différer du véhicule présenté.</p>
+                                        <div class="n-arrow" data-popper-arrow></div>
+                                    </div>
+                                </div>
+                                À partir de                               
+                                <span class="n-text-line-through n-text-gray">185 € /mois</span>
+                                <span class="n-text-gray">185 € /mois</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="n-card swiper-slide">
+                    <p class="n-card__discount">Actuellement 2000 € d'avantage</p>
+                    <img src="./img/car.png" alt="Toyota car"/>
+                    <div class="n-card__spec">
+                        <h3>
+                            <span>Hybride</span>
+                            Yaris
+                        </h3>
+                        <div class="n-card__price">
+                            <p>
+                                <span class="n-text-line-through n-text-gray">18 900 €</span>
+                                <span>
+                                    16 900 € 
+                                    <a href="#n-form-notice">
+                                        <img src="./img/icons/info-circle.svg" class="n-card__tooltip" />
+                                    </a>
+                                </span>
+                            </p>
+                            <p>                         
+                                <div>
+                                    <button class="n-button-tooltip" aria-describedby="tooltip">
+                                        <img src="./img/icons/info-circle-outline.svg" alt="Info icon" />
+                                    </button>
+                                    <div class="n-tooltip" role="tooltip">
+                                        <p>Gamme Aygo X : consommations mixtes combinées (L/100 km) et émissions de CO2 combinées (g/km) selon norme WLTP : de 4,8 à 5,0 et de 108 à 114.2 000€ TTC de remise pour toute commande d'une Toyota Aygo X neuve.Offre réservée aux particuliers, non cumulable avec toute autre offre en cours et valable pour toute Aygo X neuve commandée commandée du 03/04/2024 au 03/06/2024 dans le réseau Toyota participant.</p>
+                                        <p>Les modèles sont présentés à titre purement illustratif. Les finitions, spécifications, options, packs et accessoires du véhicule peuvent différer du véhicule présenté.</p>
+                                        <div class="n-arrow" data-popper-arrow></div>
+                                    </div>
+                                </div>
+                                À partir de                               
+                                <span class="n-text-line-through n-text-gray">185 € /mois</span>
+                                <span class="n-text-gray">185 € /mois</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="n-card swiper-slide">
+                    <p class="n-card__discount">Actuellement 2000 € d'avantage</p>
+                    <img src="./img/car.png" alt="Toyota car"/>
+                    <div class="n-card__spec">
+                        <h3>
+                            <span>Hybride</span>
+                            Yaris
+                        </h3>
+                        <div class="n-card__price">
+                            <p>
+                                <span class="n-text-line-through n-text-gray">18 900 €</span>
+                                <span>
+                                    16 900 € 
+                                    <a href="#n-form-notice">
+                                        <img src="./img/icons/info-circle.svg" class="n-card__tooltip" />
+                                    </a>
+                                </span>
+                            </p>
+                            <p>                         
+                                <div>
+                                    <button class="n-button-tooltip" aria-describedby="tooltip">
+                                        <img src="./img/icons/info-circle-outline.svg" alt="Info icon" />
+                                    </button>
+                                    <div class="n-tooltip" role="tooltip">
+                                        <p>Gamme Aygo X : consommations mixtes combinées (L/100 km) et émissions de CO2 combinées (g/km) selon norme WLTP : de 4,8 à 5,0 et de 108 à 114.2 000€ TTC de remise pour toute commande d'une Toyota Aygo X neuve.Offre réservée aux particuliers, non cumulable avec toute autre offre en cours et valable pour toute Aygo X neuve commandée commandée du 03/04/2024 au 03/06/2024 dans le réseau Toyota participant.</p>
+                                        <p>Les modèles sont présentés à titre purement illustratif. Les finitions, spécifications, options, packs et accessoires du véhicule peuvent différer du véhicule présenté.</p>
+                                        <div class="n-arrow" data-popper-arrow></div>
+                                    </div>
+                                </div>
+                                À partir de                               
+                                <span class="n-text-line-through n-text-gray">185 € /mois</span>
+                                <span class="n-text-gray">185 € /mois</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="n-card swiper-slide">
+                    <p class="n-card__discount">Actuellement 2000 € d'avantage</p>
+                    <img src="./img/car.png" alt="Toyota car"/>
+                    <div class="n-card__spec">
+                        <h3>
+                            <span>Hybride</span>
+                            Yaris
+                        </h3>
+                        <div class="n-card__price">
+                            <p>
+                                <span class="n-text-line-through n-text-gray">18 900 €</span>
+                                <span>
+                                    16 900 € 
+                                    <a href="#n-form-notice">
+                                        <img src="./img/icons/info-circle.svg" class="n-card__tooltip" />
+                                    </a>
+                                </span>
+                            </p>
+                            <p>                         
+                                <div>
+                                    <button class="n-button-tooltip" aria-describedby="tooltip">
+                                        <img src="./img/icons/info-circle-outline.svg" alt="Info icon" />
+                                    </button>
+                                    <div class="n-tooltip" role="tooltip">
+                                        <p>Gamme Aygo X : consommations mixtes combinées (L/100 km) et émissions de CO2 combinées (g/km) selon norme WLTP : de 4,8 à 5,0 et de 108 à 114.2 000€ TTC de remise pour toute commande d'une Toyota Aygo X neuve.Offre réservée aux particuliers, non cumulable avec toute autre offre en cours et valable pour toute Aygo X neuve commandée commandée du 03/04/2024 au 03/06/2024 dans le réseau Toyota participant.</p>
+                                        <p>Les modèles sont présentés à titre purement illustratif. Les finitions, spécifications, options, packs et accessoires du véhicule peuvent différer du véhicule présenté.</p>
+                                        <div class="n-arrow" data-popper-arrow></div>
+                                    </div>
+                                </div>
+                                À partir de                               
+                                <span class="n-text-line-through n-text-gray">185 € /mois</span>
+                                <span class="n-text-gray">185 € /mois</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-prev">
+                <img src="./img/icons/arrow-right.svg" alt="Button Prev" />
+            </div>
+            <div class="swiper-button-next">
+                <img src="./img/icons/arrow-right.svg" alt="Button Next" />
+            </div>
+        
+        </div>
+
+    </section>
+
+    <!--
+    <section class="n-section">
+    
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input id="checkbox-1" class="n-checkbox n-checkbox--lighter" name="checkbox-1" type="checkbox">
+                            <label for="checkbox-1" class="n-checkbox-label">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input id="checkbox-1" class="n-checkbox n-checkbox--lighter" name="checkbox-1" type="checkbox">
+                            <label for="checkbox-1" class="n-checkbox-label">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input id="checkbox-1" class="n-checkbox n-checkbox--lighter" name="checkbox-1" type="checkbox">
+                            <label for="checkbox-1" class="n-checkbox-label">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input id="checkbox-1" class="n-checkbox n-checkbox--lighter" name="checkbox-1" type="checkbox">
+                            <label for="checkbox-1" class="n-checkbox-label">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input id="checkbox-1" class="n-checkbox n-checkbox--lighter" name="checkbox-1" type="checkbox">
+                            <label for="checkbox-1" class="n-checkbox-label">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input id="checkbox-1" class="n-checkbox n-checkbox--lighter" name="checkbox-1" type="checkbox">
+                            <label for="checkbox-1" class="n-checkbox-label">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input id="checkbox-1" class="n-checkbox n-checkbox--lighter" name="checkbox-1" type="checkbox">
+                            <label for="checkbox-1" class="n-checkbox-label">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input id="checkbox-1" class="n-checkbox n-checkbox--lighter" name="checkbox-1" type="checkbox">
+                            <label for="checkbox-1" class="n-checkbox-label">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="n-card-used swiper-slide">
+                    <div class="n-card-used__header">
+                        <img src="./img/used-car.png" alt="Toyota used car"/>
+                    </div>
+    
+                    <div class="n-card-used__content">
+                        <h3>Renault Scenic</h3>
+                        <p>1.7 Blue dCi 120ch Business</p>
+                        <p class="n-card__localisation">
+                            <img src="./img/icons/marker.svg" alt="Marker">
+                            DIJON
+                        </p>
+                        <ul>
+                            <li>06-2019</li>
+                            <li>19461 km</li>
+                            <li>Diesel</li>
+                            <li>Boite manuelle</li>
+                            <li>Crit'air 2</li>
+                            <li>5 portes</li>
+                        </ul>
+                        <div class="n-card-used__price">
+                            <p>16 900 €</p>
+                            <p>
+                                <img src="./img/icons/info-circle.svg" alt="Info">
+                                185 € <span>/mois</span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="n-card-used__footer">
+                        <div>
+                            <input id="checkbox-1" class="n-checkbox n-checkbox--lighter" name="checkbox-1" type="checkbox">
+                            <label for="checkbox-1" class="n-checkbox-label">Ce véhicule m'intéresse</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev">
+                <img src="./img/icons/arrow-right.svg" alt="Button Prev" />
+            </div>
+            <div class="swiper-button-next">
+                <img src="./img/icons/arrow-right.svg" alt="Button Next" />
+            </div>
+
+        </div>
+
+    </section>
+-->
+    <section class="n-section">
+
+        <div class="n-form-notice n-form-notice--highlight n-form-notice--icon" id="n-form-notice">
+            <p>Nouvelle Toyota Yaris HybrideGamme Yaris Hybride : Consommations (L/100 km) et émission de CO2 (g/km) en conditions mixtes selon norme WLTP : 3,8 à 4,3 et 87 à 98.2 500€ TTC de Prime à l'Hybride Toyota pour toute commande d'une Yaris Hybride neuve.Offre réservée aux particuliers, non cumulable avec toute autre offre en cours et valable pour toute Yaris Hybride neuve commandée du 03/04/2024 au 03/06/2024 dans le réseau Toyota participant.</p>
+            <p>UN CREDIT VOUS ENGAGE ET DOIT ÊTRE REMBOURSE. VERIFIEZ VOS CAPACITES DE REMBOURSEMENT AVANT DE VOUS ENGAGER.</p>
+            <p>Yaris 5 portes Hybride 1.5L (116 ch) Transmission variable en continu à gestion électronique (2WD) Collection au prix facturé de 26950€. A partir de 359 €/mois. 1er loyer de 4.650 €. Entretien inclus dans la limite de 37 mois & 30 000 km.</p>
+            <p>EASY PLUS(2) est la solution conçue pour votre mobilité :<br>
+                - Bénéficiez d’un véhicule entretenu et garanti<br>
+                - Maîtrisez votre budget auto<br>
+                - Repartez à bord d’un nouveau véhicule tous les 3 ans<br>
+            </p>
+            <p>(1) Exemple pour une Yaris 5 portes Hybride 1.5L (116 ch) Transmission variable en continu à gestion électronique (2WD) Collection au prix facturé de 26950€, après une remise de 2.500 € . 1er loyer de 4.650 €. Option d'achat : 17.497 € dans la limite de 37 mois & 30 000 km. Montant total dû en cas d’acquisition : 35.070 €. Les montants ci-dessus sont exprimés TTC et assurances facultatives incluses si sélectionnées. Le premier loyer sera réglé à la livraison. En fin de contrat, restitution du véhicule dans votre concession avec paiement des frais de remise en état standard et des éventuels kilomètres excédentaires. Offre valable jusqu'au 03/06/2024 inclus. Assurance de Personnes : 32,34 € en plus de votre loyer, soit 1 196,58 € sur la durée totale du prêt. Offre réservée aux particuliers, valable chez les distributeurs Toyota participants et portant sur le tarif en vigueur au jour de la souscription du contrat. Cette simulation est non contractuelle et ne constitue ni une offre préalable de crédit, ni un bon de commande, ni une promesse de vente au sens des dispositions du droit de la consommation. Sous réserve d’acceptation par TOYOTA France FINANCEMENT, 36 bd de la République 92423 Vaucresson, RCS 412 653 180 - intermédiaire d’assurance européen : n° D-P3GY-MUFY9-27 consultable sur www.orias.fr.</p>
+            <p>(2) La solution EASY PLUS comprend l'entretien, la garantie, l'assistance et un engagement de reprise concessionnaire dans la limite prévue au contrat (au 1er des 2 termes atteint). Pour en savoir plus, rendez-vous sur https://www.toyota-financement.fr/.</p>
+        </div>
+    
+    </section>
+
+    <section class="n-section">
+
+        <div class="n-form-notice" id="n-form-notice">
+            <p>L’estimation communiquée par le simulateur de reprise n’a pas de valeur contractuelle. Elle est limitée dans le temps et circonstanciée sur vos seules déclarations et calculée selon la Valeur Argus de Transactions au moment de la simulation. Cette estimation est purement informative et ne saurait constituer une proposition commerciale de reprise de votre véhicule. Offre réservée aux particuliers dans le réseau Toyota participant. Voir détails sur toyota.fr.</p>
+            <p>Offre réservée aux particuliers dans le réseau Toyota participant. La valeur de reprise finale de votre véhicule pourra être déterminée qu’après une expertise physique de votre véhicule auprès d’un concessionnaire du Réseau TOYOTA. Seul un concessionnaire du Réseau pourra vous formuler une offre de reprise de votre véhicule ; étant rappelé qu’il n’a aucune obligation de formuler une offre de reprise, de même qu’il n’est aucunement liée à l’estimation communiquée. Le prix de reprise de votre véhicule pourrait fluctuer à la hausse comme à la baisse. A noter que le prix proposé par le concessionnaire devrait tenir compte des frais administratifs et de remise en état du véhicule selon ses propres modalités de reprise.</p>
+            <p><b>Estimation valable jusqu'au 04/05/2024</b></p>
+            <p>Un email de confirmation récapitulant votre demande et votre estimation a été envoyé à : email@mail.com
+                *Jusqu’au 30 juin 2024, bénéficiez jusqu'à 1 000 euros supplémentaires sur la reprise de votre véhicule hybride toute marque par rapport à son prix estimé sur le site toyota.fr (*limité à 500€ pour une motorisation thermique). 
+                ** 2 500€ TTC de Prime à l'Hybride Toyota pour toute commande d'une Yaris Hybride neuve. Offre réservée aux particuliers, non cumulable avec toute autre offre en cours et valable pour toute Yaris Hybride neuve commandée du 03/04/2024 au 03/06/2024 dans le réseau Toyota participant.</p>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    
+    <script>
+      const button = document.querySelector('.n-button-tooltip');
+      const tooltip = document.querySelector('.n-tooltip');
+
+      const popperInstance = Popper.createPopper(button, tooltip, {
+        modifiers: [
+          {
+            name: 'offset',
+            options: {
+              offset: [0, 8],
+            },
+          },
+        ],
+      });
+
+      function show() {
+        // Make the tooltip visible
+        tooltip.setAttribute('data-show', '');
+
+        // Enable the event listeners
+        popperInstance.setOptions((options) => ({
+          ...options,
+          modifiers: [
+            ...options.modifiers,
+            { name: 'eventListeners', enabled: true },
+          ],
+        }));
+
+        // Update its position
+        popperInstance.update();
+      }
+
+      function hide() {
+        // Hide the tooltip
+        tooltip.removeAttribute('data-show');
+
+        // Disable the event listeners
+        popperInstance.setOptions((options) => ({
+          ...options,
+          modifiers: [
+            ...options.modifiers,
+            { name: 'eventListeners', enabled: false },
+          ],
+        }));
+      }
+
+      const showEvents = ['mouseenter', 'focus'];
+      const hideEvents = ['mouseleave', 'blur'];
+
+      showEvents.forEach((event) => {
+        button.addEventListener(event, show);
+      });
+
+      hideEvents.forEach((event) => {
+        button.addEventListener(event, hide);
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+            var init = false;
+            var swiper;
+            function swiperCard() {
+            if (window.innerWidth <= 991) {
+                if (!init) {
+                init = true;
+                swiper = new Swiper(".n-swiper-cards", {
+                        slidesPerView: 1,
+                        centeredSlides: true,
+                        spaceBetween: 26,
+                        pagination: {
+                        clickable: true,
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    },
+                });
+                }
+            } else if (init) {
+                swiper.destroy();
+                init = false;
+            }
+            }
+            swiperCard();
+            window.addEventListener("resize", swiperCard);
+        </script>
+  </body>
+</html>
