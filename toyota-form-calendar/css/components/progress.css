@@ -1,0 +1,35 @@
+/* BEGIN - CODE TO INSERT */
+
+:root {
+  --progress-bar-width: 100%;
+  --progress-bar-height: 6px;
+  --progress-bar-radius: 0;
+}
+
+.progress-bar__bg {
+  position: relative;
+  width: var(--progress-bar-width);
+  height: var(--progress-bar-height);
+  border-radius: var(--progress-bar-radius);
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.progress-bar__fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #FFA5A5 0%, #FF4747 100%);
+}
+
+.progress-bar__value {
+  flex-shrink: 0;
+  color: #FF4747;
+  font-family: "Toyota Type SemiBold";
+  font-size: 0.75rem;
+  margin-left: 6px;
+}
+
+/* END - CODE TO INSERT */

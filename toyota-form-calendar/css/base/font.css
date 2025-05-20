@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Toyota Type";
+    src: 
+      local("ToyotaType"),
+      url("../../fonts/ToyotaType-Book.eot") format("opentype"),
+      url("../../fonts/ToyotaType-Book.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+  font-family: "Toyota Type SemiBold";
+  src: 
+    local("ToyotaType"),
+    url("../../fonts/ToyotaType-Semibold.eot") format("opentype"),
+    url("../../fonts/ToyotaType-Semibold.woff") format("woff");
+  font-weight: 600;
+}
+
+html, 
+body {
+    font-family: "Toyota Type";
+}
