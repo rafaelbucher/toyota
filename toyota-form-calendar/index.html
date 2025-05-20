@@ -26,7 +26,109 @@
         <section class="n-section">
 
             <form class="n-form-toyota">
+
+                <fieldset class="n-form-toyota__fieldset">
+
+                    <div class="n-form-toyota__control">
+                        <label for="select">Véhicule<span aria-label="required">*</span></label>
+                        <select name="select" id="select" class="n-form-select" required>
+                            <option value="">Sélectionnez un véhicule</option>
+                            <option value="4Runner">4Runner</option>
+                            <option value="4runner-hybrid">4Runner Hybrid</option>
+                            <option value="avalon">Avalon</option>
+                            <option value="c-hr">C-HR</option>
+                            <option value="camry-hybride">Camry hybride</option>
+                            <option value="...">...</option>
+                        </select>
+                        <span class="n-form-toyota__valid-icon">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="n-form-toyota__control">
+                        <label for="select">Année<span aria-label="required">*</span></label>
+                        <select name="select" id="select-2" class="n-form-select" required>
+                            <option value="">Sélectionner l'année</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="...">...</option>
+                        </select>
+                        <span class="n-form-toyota__valid-icon">
+                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    </div>
+
+                    <div class="n-form-toyota__control">
+                        <label for="select">Modèle<span aria-label="required">*</span></label>
+                        <select name="select" id="select-2" class="n-form-select" disabled required>
+                            <option value="">Sélectionner le modèle</option>
+                            <option value="4runner">4Runner</option>
+                            <option value="...">...</option>
+                        </select>
+                        <span class="n-form-toyota__valid-icon">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="n-form-toyota__fieldset">
+
+                    <div class="n-form-toyota__control">
+                        <label for="distance">Kilométrage du véhicule (km)<span aria-label="required">*</span></label>
+                        <input type="number" id="distance" name="distance" placeholder="0"  maxlength="0" maxlength="512000" class="n-form-text">
+                        <span class="n-form-toyota__valid-icon">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <span class="n-form-toyota__valid-icon">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="n-form-toyota__control">
+                        <label for="average">Kilométrage mensuel moyen</label>
+                        <input type="number" id="average" name="distance" placeholder="0"  maxlength="0" maxlength="512000" class="n-form-text">
+                        <span class="n-form-toyota__valid-icon">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <span class="n-form-toyota__valid-icon">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                </fieldset>
+
+                <div class="n-form-toyota__submit">
+                    <button class="n-button n-button--large n-button--icon-right" type="button" disabled>Afficher mon calendrier</button>
+                </div>
+
             </form>
+
+        </section>
+
+
+        <section class="n-section n-section--hidden">
+
+            <div class="n-header n-header--center">
+                <h4 class="n-headline-4">VOTRE PROGRAMME D'ENTRETIEN PERSONNALISÉ</h4>
+                <p class="n-paragraph">Le calendrier d’entretien recommandé ci-dessous est basé sur les renseignements sur votre véhicule.</p>
+            </div>
 
         </section>
 
