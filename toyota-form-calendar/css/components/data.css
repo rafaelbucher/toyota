@@ -8,9 +8,7 @@
 }
 
 .n-data ul {
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: 2fr 1fr 1fr;
+    display: block;
 }
 
 .n-data ul li:first-child span {
@@ -27,4 +25,12 @@
 
 .n-data p span {
     font-family: "Toyota Type SemiBold";
+}
+
+@media screen and (min-width: 768px) {
+    .n-data ul {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
 }

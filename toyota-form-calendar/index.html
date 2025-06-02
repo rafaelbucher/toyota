@@ -245,7 +245,25 @@
                 direction: 'horizontal',
                 loop: true,
                 slidesPerView: 4,
-                spaceBetween: 24,
+                spaceBetween: 32,
+                // Responsive breakpoints
+                breakpoints: {
+                    // when window width is >= 320px
+                    360: {
+                        slidesPerView: 1,
+                        spaceBetween: 16
+                    },
+                    // when window width is >= 480px
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 24,
+                    },
+                    // when window width is >= 640px
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 36
+                    }
+                },
 
                 // Navigation arrows
                 navigation: {
