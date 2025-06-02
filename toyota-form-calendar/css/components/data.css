@@ -2,9 +2,29 @@
     background-color: #fff;
     color: var(--toyota-black-800);
     border: 1px solid var(--toyota-black-800);
-    display: flex;
-    flex-direction: row;
-    font-size: 16px;
-    font-weight: 600;
     border-radius: 8px;
+    padding: 2.5rem 1.5rem;
+    margin: 2.5rem 0;
+}
+
+.n-data ul {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.n-data ul li:first-child span {
+    display: block;
+    font-family: "Toyota Type SemiBold";
+    font-size: 28px;
+    line-height: 180%;
+}
+
+.n-data p {
+    font-family: "Toyota Type";
+    line-height: 180%;
+}
+
+.n-data p span {
+    font-family: "Toyota Type SemiBold";
 }

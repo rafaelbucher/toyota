@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+.n-section--my {
+    margin: 8rem auto;
+}
+
 .n-section--bg-dark {
     background-color: var(--toyota-black-800);
 }
