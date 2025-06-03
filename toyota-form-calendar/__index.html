@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Calendrier d’entretien | Toyota Canada</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="https://toyotacanada.scene7.com/is/image/toyotacanada/apple-touch-icon-1"/>
+        <link rel="icon" sizes="192x192" type="image/png" href="https://toyotacanada.scene7.com/is/image/toyotacanada/icon-192-1"/>
+        <link rel="icon" sizes="512x512" type="image/png" href="https://toyotacanada.scene7.com/is/image/toyotacanada/icon-512-1"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+
+    <body>
+
+        <section class="n-section">
+
+            <div class="n-header n-header--center">
+                <h1 class="n-headline-1 n-headline-1--highlight">Besoin d’un rendez-vous de service ?</h1>
+                <p class="n-paragraph">Quel que soit le type de Toyota que vous conduisez – essence, hybride ou électrique –, elle doit toujours faire l’objet d’un entretien régulier. Plus vous bichonnez votre Toyota, plus elle durera longtemps. Consultez votre programme d’entretien personnalisé ci-dessous et prenez votre prochain rendez-vous.</p>
+            </div>
+
+        </section>
+
+        <section class="n-section">
+
+            <form class="n-form-toyota">
+
+                <fieldset class="n-form-toyota__fieldset">
+
+                    <div class="n-form-toyota__control">
+                        <label for="select">Véhicule<span aria-label="required">*</span></label>
+                        <select name="select" id="select" class="n-form-select" required>
+                            <option value="">Sélectionnez un véhicule</option>
+                            <option value="4Runner">4Runner</option>
+                            <option value="4runner-hybrid">4Runner Hybrid</option>
+                            <option value="avalon">Avalon</option>
+                            <option value="c-hr">C-HR</option>
+                            <option value="camry-hybride">Camry hybride</option>
+                            <option value="...">...</option>
+                        </select>
+                        <span class="n-form-toyota__valid-icon">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="n-form-toyota__control">
+                        <label for="select">Année<span aria-label="required">*</span></label>
+                        <select name="select" id="select-2" class="n-form-select" required>
+                            <option value="">Sélectionner l'année</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="...">...</option>
+                        </select>
+                        <span class="n-form-toyota__valid-icon">
+                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    </div>
+
+                    <div class="n-form-toyota__control">
+                        <label for="select">Modèle<span aria-label="required">*</span></label>
+                        <select name="select" id="select-2" class="n-form-select" disabled required>
+                            <option value="">Sélectionner le modèle</option>
+                            <option value="4runner">4Runner</option>
+                            <option value="...">...</option>
+                        </select>
+                        <span class="n-form-toyota__valid-icon">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="n-form-toyota__fieldset">
+
+                    <div class="n-form-toyota__control">
+                        <label for="distance">Kilométrage du véhicule (km)<span aria-label="required">*</span></label>
+                        <input type="number" id="distance" name="distance" placeholder="0"  maxlength="0" maxlength="512000" class="n-form-text">
+                        <span class="n-form-toyota__valid-icon">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <span class="n-form-toyota__valid-icon">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="n-form-toyota__control">
+                        <label for="average">Kilométrage mensuel moyen</label>
+                        <input type="number" id="average" name="distance" placeholder="0"  maxlength="0" maxlength="512000" class="n-form-text">
+                        <span class="n-form-toyota__valid-icon">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <span class="n-form-toyota__valid-icon">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Icon" d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                </fieldset>
+
+                <div class="n-form-toyota__submit">
+                    <button class="n-button n-button--large" type="button" disabled>
+                        Afficher mon calendrier
+                        <span class="n-button__loader"></span>
+                    </button>
+                </div>
+
+                <div class="n-form-toyota__submit">
+                    <button class="n-button n-button--large" type="button">
+                        Afficher mon calendrier
+                        <span class="n-button__loader"></span>
+                    </button>
+                </div>
+
+                <div class="n-form-toyota__submit">
+                    <button class="n-button n-button--large n-button--loaded" type="button">
+                        Afficher mon calendrier
+                        <span class="n-button__loader"></span>
+                    </button>
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <section class="n-section n-section--hidden n-section--my">
+
+            <div class="n-header n-header--center">
+                <h4 class="n-headline-4">VOTRE PROGRAMME D'ENTRETIEN PERSONNALISÉ</h4>
+                <p class="n-paragraph">Le calendrier d’entretien recommandé ci-dessous est basé sur les renseignements sur votre véhicule.</p>
+            </div>
+
+            <div class="n-data">
+                <ul>
+                    <li>
+                        <p>Votre Toyota <span>4Runner 2024</span></p>
+                    </li>
+                    <li>
+                        <p>Kilométrage du véhicule (km):<br><span>102</span>km</p>
+                    </li>
+                    <li>
+                        <p>Kilométrage mensuel moyen:<br><span>1,333</span> km/mois</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="swiper n-swiper">
+                <div class="swiper-wrapper n-swiper-cards">
+                    <div class="swiper-slide">
+                        <div class="n-swiper-card">
+                            <div class="n-swiper-card__content">
+                                <p>Prochain service<span>24,000 km</span></p>
+                                <p>Date de service estimée<span>December 2026</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="n-swiper-card">
+                            <div class="n-swiper-card__content">
+                                <p>Prochain service<span>24,000 km</span></p>
+                                <p>Date de service estimée<span>December 2026</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="n-swiper-card n-swiper-card--selected">
+                            <div class="n-swiper-card__content">
+                                <p>Prochain service<span>24,000 km</span></p>
+                                <p>Date de service estimée<span>December 2026</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="n-swiper-card">
+                            <div class="n-swiper-card__content">
+                                <p>Prochain service<span>24,000 km</span></p>
+                                <p>Date de service estimée<span>December 2026</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="n-swiper-card">
+                            <div class="n-swiper-card__content">
+                                <p>Prochain service<span>24,000 km</span></p>
+                                <p>Date de service estimée<span>December 2026</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="n-swiper-card">
+                            <div class="n-swiper-card__content">
+                                <p>Prochain service<span>24,000 km</span></p>
+                                <p>Date de service estimée<span>December 2026</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="n-swiper-card">
+                            <div class="n-swiper-card__content">
+                                <p>Prochain service<span>24,000 km</span></p>
+                                <p>Date de service estimée<span>December 2026</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+
+
+            <div class="n-group-button">
+                <button class="n-button n-button--large" type="button">
+                    Your perzonalized Service Schedule
+                </button>
+                <button class="n-button n-button--large n-button-outline" type="button">
+                    Télécharger le pprogramme complet
+                </button>
+            </div>
+
+        </section>
+
+        <script type="module">
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                slidesPerView: 4,
+                spaceBetween: 32,
+                // Responsive breakpoints
+                breakpoints: {
+                    // when window width is >= 320px
+                    360: {
+                        slidesPerView: 1,
+                        spaceBetween: 16
+                    },
+                    // when window width is >= 480px
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 24,
+                    },
+                    // when window width is >= 640px
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 36
+                    }
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }
+            });
+        </script>
+
+    </body>
+</html>
