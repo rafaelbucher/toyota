@@ -1,0 +1,13 @@
+<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="marker-pin-01" clip-path="url(#clip0_94_19864)">
+<g id="Icon">
+<path d="M8.19661 9.58724C9.30118 9.58724 10.1966 8.69181 10.1966 7.58724C10.1966 6.48267 9.30118 5.58724 8.19661 5.58724C7.09205 5.58724 6.19661 6.48267 6.19661 7.58724C6.19661 8.69181 7.09205 9.58724 8.19661 9.58724Z" stroke="#6C7073" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.19661 15.5872C10.8633 12.9206 13.5299 10.5328 13.5299 7.58724C13.5299 4.64172 11.1421 2.25391 8.19661 2.25391C5.2511 2.25391 2.86328 4.64172 2.86328 7.58724C2.86328 10.5328 5.52995 12.9206 8.19661 15.5872Z" stroke="#6C7073" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_94_19864">
+<rect width="16" height="16" fill="white" transform="translate(0.195312 0.919922)"/>
+</clipPath>
+</defs>
+</svg>

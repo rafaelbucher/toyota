@@ -298,3 +298,25 @@ Util.osHasReducedMotion = function() {
 	}
 }());
 /* END - CODE TO INSERT */
+
+sKilometrage = true;
+
+function toggleSwitch() {
+    const background = document.getElementById('background');
+    const kilometrageOption = document.getElementById('kilometrage');
+    const ageOption = document.getElementById('age');
+
+    if (isKilometrage) {
+        // Basculer vers "Âge (mois)"
+        background.className = 'switch-background right';
+        kilometrageOption.classList.remove('active');
+        ageOption.classList.add('active');
+        isKilometrage = false;
+    } else {
+        // Basculer vers "Kilométrage (km)"
+        background.className = 'switch-background left';
+        ageOption.classList.remove('active');
+        kilometrageOption.classList.add('active');
+        isKilometrage = true;
+    }
+}
