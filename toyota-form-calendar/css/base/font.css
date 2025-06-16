@@ -16,6 +16,15 @@
   font-weight: 600;
 }
 
+@font-face {
+  font-family: "Toyota Type Bold";
+  src: 
+    local("ToyotaType"),
+    url("../../fonts/ToyotaType-Bold.eot") format("opentype"),
+    url("../../fonts/ToyotaType-Bold.woff") format("woff");
+  font-weight: 600;
+}
+
 html, 
 body {
     font-family: "Toyota Type";

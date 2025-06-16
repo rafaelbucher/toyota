@@ -64,13 +64,6 @@
     <body>
         <!-- Lien d'évitement -->
         <a href="#main-content" class="skip-link">Aller au contenu principal</a>
-        
-        <header role="banner">
-            <nav role="navigation" aria-label="Navigation principale">
-                <!-- Navigation principale serait ici -->
-            </nav>
-            <h1>DEV BRANCH V2</h1>
-        </header>
 
         <main id="main-content" role="main">
             <section class="n-section" aria-labelledby="main-heading">
@@ -80,7 +73,7 @@
                 </div>
             </section>
 
-            <section class="n-section" aria-labelledby="form-heading">
+            <section class="n-section n-section--form" aria-labelledby="form-heading">
                 <h2 id="form-heading" class="visually-hidden">Formulaire de sélection du véhicule</h2>
                 
                 <form class="n-form-toyota" novalidate>
@@ -90,7 +83,7 @@
                         <div class="n-form-toyota__control">
                             <label for="vehicle-select">
                                 Véhicule
-                                <abbr title="requis" aria-label="champ obligatoire">*</abbr>
+                                <span class="input-required" aria-label="champ obligatoire">*</span>
                             </label>
                             <select name="vehicle" id="vehicle-select" class="n-form-select" required aria-describedby="vehicle-error">
                                 <option value="">Sélectionnez un véhicule</option>
@@ -110,30 +103,9 @@
                         </div>
 
                         <div class="n-form-toyota__control">
-                            <label for="year-select">
-                                Année
-                                <abbr title="requis" aria-label="champ obligatoire">*</abbr>
-                            </label>
-                            <select name="year" id="year-select" class="n-form-select" required aria-describedby="year-error">
-                                <option value="">Sélectionner l'année</option>
-                                <option value="2025">2025</option>
-                                <option value="2024">2024</option>
-                                <option value="2023">2023</option>
-                                <option value="2022">2022</option>
-                                <option value="2021">2021</option>
-                            </select>
-                            <span class="n-form-toyota__valid-icon" aria-hidden="true">
-                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
-                                    <path d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                            <div id="year-error" class="error-message" role="alert" aria-live="polite"></div>
-                        </div>
-
-                        <div class="n-form-toyota__control">
                             <label for="model-select">
                                 Modèle
-                                <abbr title="requis" aria-label="champ obligatoire">*</abbr>
+                                <span class="input-required" aria-label="champ obligatoire">*</span>
                             </label>
                             <select name="model" id="model-select" class="n-form-select" disabled required aria-describedby="model-error model-help">
                                 <option value="">Sélectionner le modèle</option>
@@ -150,41 +122,30 @@
                             </span>
                             <div id="model-error" class="error-message" role="alert" aria-live="polite"></div>
                         </div>
-                        
-                    </fieldset>
-
-                    <fieldset class="n-form-toyota__fieldset">
-                        <p>Entrez le kilométrage ou l'âge de votre véhicule</p>
-                        <div class="n-form-toyota__control">
-                            <div class="switch-container" onclick="toggleSwitch()">
-                                <div class="switch-options">
-                                    <div class="switch-option active" id="kilometrage">
-                                        Kilométrage (km)
-                                    </div>
-                                    <div class="switch-option" id="age">
-                                        Âge (mois)
-                                    </div>
-                                </div>
-                                <div class="switch-background left" id="background"></div>
-                            </div>
-                        </div>
 
                         <div class="n-form-toyota__control">
-                            <label for="mileage-input">
-                                Kilométrage du véhicule (km)
-                                <abbr title="requis" aria-label="champ obligatoire">*</abbr>
+                            <label for="year-select">
+                                Année
+                                <span class="input-required" aria-label="champ obligatoire">*</span>
                             </label>
-                            <input type="number" id="mileage-input" name="mileage" placeholder="0" min="0" max="512000" class="n-form-text" required aria-describedby="mileage-error mileage-help">
+                            <select name="year" id="year-select" class="n-form-select" disabled required aria-describedby="year-error">
+                                <option value="">Sélectionner l'année</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                            </select>
                             <span class="n-form-toyota__valid-icon" aria-hidden="true">
                                 <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
                                     <path d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </span>
-                            <div id="mileage-error" class="error-message" role="alert" aria-live="polite"></div>
+                            <div id="year-error" class="error-message" role="alert" aria-live="polite"></div>
                         </div>
 
                         <div class="n-form-toyota__control">
-                            <label for="average-input">Kilométrage mensuel moyen</label>
+                            <label for="average-input">Kilométrage annuel</label>
                             <input type="number" id="average-input" name="averageMileage" placeholder="0" min="0" max="512000" class="n-form-text" aria-describedby="average-help">
                             <span class="n-form-toyota__valid-icon" aria-hidden="true">
                                 <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
@@ -192,252 +153,22 @@
                                 </svg>
                             </span>
                         </div>
+                        
                     </fieldset>
 
-                </form>
-
                     <div class="n-form-toyota__submit">
-                        <button class="n-button n-button--large" type="submit" id="submit-button" aria-describedby="submit-status">
-                            Afficher mon calendrier
-                            <span class="n-button__loader" aria-hidden="true"></span>
-                            <span id="submit-status" class="button-status visually-hidden">Bouton désactivé - veuillez remplir tous les champs obligatoires</span>
+                        <button class="n-button n-button--large n-button--outline" type="button">
+                            Annuler
+                            <span class="n-button__loader"></span>
                         </button>
                         <button class="n-button n-button--large" type="button">
-                            Afficher mon calendrier
-                            <span class="n-button__loader"></span>
-                        </button>
-                        <button class="n-button n-button--large n-button--loaded" type="button">
-                            Afficher mon calendrier
+                            Valider
                             <span class="n-button__loader"></span>
                         </button>
                     </div>
-            </section>
 
-            <section class="n-section n-section--hidden n-section--my" id="results-section" aria-labelledby="results-heading" aria-live="polite">
-                <div class="n-header n-header--center">
-                    <h2 id="results-heading" class="n-headline-4">VOTRE PROGRAMME D'ENTRETIEN PERSONNALISÉ</h2>
-                    <p class="n-paragraph">Le calendrier d'entretien recommandé ci-dessous est basé sur les renseignements sur votre véhicule.</p>
-                </div>
-
-                <div class="n-data" role="region" aria-labelledby="vehicle-info-heading">
-                    <h3 id="vehicle-info-heading" class="visually-hidden">Informations sur votre véhicule</h3>
-                    <dl>
-                        <dt>Votre Toyota</dt>
-                        <dd><strong>4Runner 2024</strong></dd>
-                        <dt>Kilométrage du véhicule (km)</dt>
-                        <dd><strong>102</strong> km</dd>
-                        <dt>Kilométrage mensuel moyen</dt>
-                        <dd><strong>1,333</strong> km/mois</dd>
-                    </dl>
-                </div>
-
-                <div class="swiper n-swiper" role="region" aria-labelledby="schedule-heading">
-                    <h3 id="schedule-heading" class="visually-hidden">Calendrier des services d'entretien</h3>
-                    <div class="swiper-wrapper n-swiper-cards" role="list">
-                        <div class="swiper-slide" role="listitem">
-                            <div class="n-swiper-card">
-                                <div class="n-swiper-card__content">
-                                    <p>Prochain service<br><strong>24,000 km</strong></p>
-                                    <p>Date de service estimée<br><strong>Décembre 2026</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" role="listitem">
-                            <div class="n-swiper-card">
-                                <div class="n-swiper-card__content">
-                                    <p>Prochain service<br><strong>32,000 km</strong></p>
-                                    <p>Date de service estimée<br><strong>Juin 2027</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" role="listitem">
-                            <div class="n-swiper-card n-swiper-card--selected" aria-current="true">
-                                <div class="n-swiper-card__content">
-                                    <p>Service recommandé<br><strong>40,000 km</strong></p>
-                                    <p>Date de service estimée<br><strong>Décembre 2027</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" role="listitem">
-                            <div class="n-swiper-card">
-                                <div class="n-swiper-card__content">
-                                    <p>Prochain service<br><strong>48,000 km</strong></p>
-                                    <p>Date de service estimée<br><strong>Juin 2028</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" role="listitem">
-                            <div class="n-swiper-card">
-                                <div class="n-swiper-card__content">
-                                    <p>Prochain service<br><strong>56,000 km</strong></p>
-                                    <p>Date de service estimée<br><strong>Décembre 2028</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="swiper-button-prev" aria-label="Service précédent" type="button"></button>
-                    <button class="swiper-button-next" aria-label="Service suivant" type="button"></button>
-                </div>
-
-                <div class="n-group-button">
-                    <button class="n-button n-button--large" type="button">
-                        Votre programme de service personnalisé
-                    </button>
-                    <button class="n-button n-button--large n-button-outline" type="button">
-                        Télécharger le programme complet
-                    </button>
-                </div>
+                </form>
             </section>
         </main>
-
-        <footer role="contentinfo">
-            <!-- Pied de page serait ici -->
-        </footer>
-
-        <script>
-            let Kilometrage = true;
-
-            function toggleSwitch() {
-                const background = document.getElementById('background');
-                const kilometrageOption = document.getElementById('kilometrage');
-                const ageOption = document.getElementById('age');
-
-                if (isKilometrage) {
-                    // Basculer vers "Âge (mois)"
-                    background.className = 'switch-background right';
-                    kilometrageOption.classList.remove('active');
-                    ageOption.classList.add('active');
-                    isKilometrage = false;
-                } else {
-                    // Basculer vers "Kilométrage (km)"
-                    background.className = 'switch-background left';
-                    ageOption.classList.remove('active');
-                    kilometrageOption.classList.add('active');
-                    isKilometrage = true;
-                }
-            }
-        </script>
-
-        <script type="module">
-            // Configuration Swiper avec amélioration de l'accessibilité
-            const swiper = new Swiper('.swiper', {
-                direction: 'horizontal',
-                loop: false, // Désactivé pour éviter la confusion avec les lecteurs d'écran
-                slidesPerView: 4,
-                spaceBetween: 32,
-                
-                // Accessibilité
-                a11y: {
-                    enabled: true,
-                    prevSlideMessage: 'Service précédent',
-                    nextSlideMessage: 'Service suivant',
-                    paginationBulletMessage: 'Aller au service {{index}}'
-                },
-                
-                // Breakpoints responsive
-                breakpoints: {
-                    360: {
-                        slidesPerView: 1,
-                        spaceBetween: 16
-                    },
-                    768: {
-                        slidesPerView: 3,
-                        spaceBetween: 24,
-                    },
-                    1024: {
-                        slidesPerView: 4,
-                        spaceBetween: 36
-                    }
-                },
-
-                // Navigation
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                
-                // Support clavier
-                keyboard: {
-                    enabled: true,
-                    onlyInViewport: true,
-                }
-            });
-            
-            // Gestion de la validation du formulaire
-            const form = document.querySelector('.n-form-toyota');
-            const submitButton = document.getElementById('submit-button');
-            const requiredFields = form.querySelectorAll('[required]');
-            
-            function validateForm() {
-                let isValid = true;
-                
-                requiredFields.forEach(field => {
-                    if (!field.value.trim()) {
-                        isValid = false;
-                    }
-                });
-                
-                if (isValid) {
-                    submitButton.removeAttribute('disabled');
-                    submitButton.setAttribute('aria-describedby', '');
-                } else {
-                    submitButton.setAttribute('disabled', '');
-                    submitButton.setAttribute('aria-describedby', 'submit-status');
-                }
-            }
-            
-            // Validation en temps réel
-            requiredFields.forEach(field => {
-                field.addEventListener('input', validateForm);
-                field.addEventListener('change', validateForm);
-            });
-            
-            // Validation initiale
-            validateForm();
-            
-            // Gestion de la soumission
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Validation des champs
-                let hasErrors = false;
-                
-                requiredFields.forEach(field => {
-                    const errorElement = document.getElementById(field.getAttribute('aria-describedby')?.split(' ')[0]);
-                    
-                    if (!field.value.trim()) {
-                        hasErrors = true;
-                        if (errorElement) {
-                            errorElement.textContent = 'Ce champ est obligatoire';
-                        }
-                        field.setAttribute('aria-invalid', 'true');
-                    } else {
-                        if (errorElement) {
-                            errorElement.textContent = '';
-                        }
-                        field.setAttribute('aria-invalid', 'false');
-                    }
-                });
-                
-                if (!hasErrors) {
-                    // Afficher les résultats
-                    const resultsSection = document.getElementById('results-section');
-                    resultsSection.classList.remove('n-section--hidden');
-                    resultsSection.scrollIntoView({ behavior: 'smooth' });
-                    
-                    // Annoncer le changement aux lecteurs d'écran
-                    const announcement = document.createElement('div');
-                    announcement.setAttribute('aria-live', 'assertive');
-                    announcement.setAttribute('aria-atomic', 'true');
-                    announcement.className = 'visually-hidden';
-                    announcement.textContent = 'Votre programme d\'entretien personnalisé a été généré et affiché ci-dessous.';
-                    document.body.appendChild(announcement);
-                    
-                    setTimeout(() => {
-                        document.body.removeChild(announcement);
-                    }, 1000);
-                }
-            });
-        </script>
     </body>
 </html>

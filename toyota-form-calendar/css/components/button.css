@@ -8,7 +8,6 @@
     font-weight: 600;
     color: #fff;  
     border-radius: 8px;
-    margin: 1rem 0;
 }
 
 .n-button:hover {
@@ -65,23 +64,23 @@
     margin-left: 16px;
 }
 
-.n-button-outline {
+.n-button--outline {
     background-color: #fff;
     color: var(--toyota-black-800);
 }
 
-.n-button-outline:hover {
+.n-button--outline:hover {
     background-color: var(--toyota-black-100);
 }
 
-.n-button-outline[disabled] {
+.n-button--outline[disabled] {
     border-color: var(--toyota-black-400);
     background-color: #fff;
     color: var(--toyota-black-400);
 }
 
 .n-button--large {
-    padding: .75rem 3rem;
+    padding: .75rem;
 }
 
 .n-button--icon-right,
@@ -177,18 +176,11 @@
 }
 
 @media screen and (min-width: 991px) {
-    .n-form-toyota {
-        display: grid;
-        grid-template-columns: 1fr 1fr !important;
-        gap: 2rem;
-    }
 
-    .n-form-toyota__fieldset {
-        display: grid;
-        grid-template-columns: 1fr !important;
-        gap: 1rem;
+    .n-button--large {
+        padding: .75rem 3rem;
     }
-
+    
     .n-group-button {
         flex-direction: row;
         margin: 2.5rem 0;

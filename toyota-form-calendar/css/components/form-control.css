@@ -1,12 +1,16 @@
 .n-form-toyota {
-    margin: 0;
+    max-width: 485px;
+    width: 100%;
 }
 
 .n-form-toyota__fieldset {
-    display: grid;
-    grid-template-columns: 1fr;
     margin-bottom: 2.5rem;
     padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-bottom: 1px solid #BEBEC1;
 }
 
 .n-form-toyota__fieldset--noborder {
@@ -42,10 +46,11 @@
 
 .n-form-toyota__control {
     position: relative;
-    display: flex;
+    display: block;
+    width: 100%;
     justify-content: flex-end;
     flex-direction: column;  
-    margin-bottom: .5rem; 
+    margin-bottom: 26px; 
 }
 
 .n-form-toyota__control:last-child {
@@ -55,18 +60,20 @@
 .n-form-toyota__control label,
 .n-form-toyota__control p {
     display: flex;
-    margin-bottom: 1.25rem;
+    margin-bottom: 16px;
     font-size: 1rem;
     font-weight: 600;
     line-height: 120%;
 }
 
-.n-form-toyota__control [aria-label="required"] {
-    color: var(--toyota-brenad);
+.n-form-toyota__control [aria-label="required"],
+.n-form-toyota__control .input-required {
+    color: var(--toyota-brand);
+    font-size: 16px;
 }
 
-.n-form-text,
-.n-form-select {
+.n-form-text {
+    width: calc(100% - 28px);
     height: 24px;
     border: 1px solid var(--toyota-black-600);
     padding: 10px 14px;
@@ -78,10 +85,45 @@
     appearance: none;
 }
 
+.n-form-select {
+    width: 100%;
+    height: 24px;
+    border: 1px solid var(--toyota-black-400);
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--toyota-black-600);
+    background-color: var(--Toyota-White);
+    appearance: none;
+    outline: none;
+}
+
+
+.n-form-text:hover,
+.n-form-select:hover {
+    border: 1px solid var(--toyota-black-600);
+    outline: none;
+    color: var(--toyota-black-700);
+}
+
+
 .n-form-text:focus,
 .n-form-select:focus {
     border: 1px solid var(--toyota-black-800);
     box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.15);
+    color: var(--toyota-black-700);
+    outline: none;
+}
+
+
+.n-form-text:active,
+.n-form-select:active {
+    border: 1px solid var(--toyota-black-800);
+    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.15);
+    color: var(--toyota-black-900);
+    outline: none;
 }
 
 .n-form-text[disabled],
@@ -90,7 +132,7 @@
 .n-form-select[disabled]::placeholder {
     border-color: var(--toyota-black-500);
     background-color: var(--toyota-black-100);
-    color: var(--toyota-black-400);
+    color: var(--toyota-black-500);
 }
 
 .n-form-text[name="verification"],
@@ -123,10 +165,6 @@
     position: absolute;
     right: -1.2rem;
     bottom: 1rem;
-}
-
-.n-form-toyota__submit .n-button {
-    width: 100%;
 }
 
 .n-form-message {
@@ -246,8 +284,8 @@
 .n-form-toyota__submit {
     display: flex;
     align-items: end;
-    justify-content: flex-end;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
     margin-top: 1rem;
 }
 

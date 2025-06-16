@@ -1,10 +1,22 @@
 .n-headline-1 {
-    font-family: "Toyota Type SemiBold";
-    font-size: 1.5rem;
+    font-family: "Toyota Type Bold";
     font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
     margin: 2.5rem 0;
+    font-size: 25px;
+    line-height: 38px;
+}
+
+.n-headline-1--highlight {
+    position: relative;
+}
+
+.n-headline-1--highlight::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 65px;
+    background-color: var(--toyota-brand);
+    margin: 25px auto 35px auto;
 }
 
 .n-headline-2,
@@ -23,8 +35,7 @@
 .n-headline-1--highlight,
 .n-headline-2--highlight {
     text-align: center;
-    text-transform: uppercase;
-    font-family: "Toyota Type";
+    font-family: "Toyota Type Bold";
 }
 
 .n-headline-3 {
