@@ -13,6 +13,11 @@
     border-bottom: 1px solid #BEBEC1;
 }
 
+.n-form-toyota__fieldset p:last-child {
+    margin: 20px auto 10px auto;
+    text-align: center;
+}
+
 .n-form-toyota__fieldset--noborder {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -61,9 +66,16 @@
 .n-form-toyota__control p {
     display: flex;
     margin-bottom: 16px;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 16px;
     line-height: 120%;
+}
+
+.n-form-toyota__control label {
+    font-family: "Toyota Type SemiBold";
+}
+
+.n-form-toyota__control p {
+    font-family: "Toyota Type";
 }
 
 .n-form-toyota__control [aria-label="required"],
@@ -72,7 +84,8 @@
     font-size: 16px;
 }
 
-.n-form-text {
+.n-form-text,
+.n-form-date {
     width: calc(100% - 28px);
     height: 24px;
     border: 1px solid var(--toyota-black-600);

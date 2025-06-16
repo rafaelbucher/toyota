@@ -156,6 +156,29 @@
                         
                     </fieldset>
 
+                    <fieldset class="n-form-toyota__fieldset n-form-toyota__fieldset--highlight">
+                        <legend class="visually-hidden">Date du dernier entretien</legend>
+
+                        <div class="n-form-toyota__control">
+                            <p>Vous devez faire votre entretien tous les ans</p>
+                            <label for="average-input">Date du dernier entretien</label>
+                            <input type="date" id="start" name="trip-start"  value="dd/mm/aaaa" min="2018-01-01" max="2018-12-31" class="n-form-date" aria-describedby="average-help">
+                            <span class="n-form-toyota__valid-icon" aria-hidden="true">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
+                                    <path d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        
+                        <button class="n-button n-button--full" type="button">
+                            Voir la prochaine date
+                            <span class="n-button__loader"></span>
+                        </button>
+
+                        <p>Vous devez faire votre entretien tous les ans</p>
+                        
+                    </fieldset>
+
                     <div class="n-form-toyota__submit">
                         <button class="n-button n-button--large n-button--outline" type="button">
                             Annuler
