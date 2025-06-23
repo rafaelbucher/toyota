@@ -1,0 +1,21 @@
+.section {
+    margin-bottom: calc(var(--space-8) * 1.5);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-family: var(--ToyotaType-Heading);
+    color: var(--Toyota-Black-800);
+    margin-bottom: var(--space-6);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    font-family: var(--ToyotaType-Book);
+    color: var(--Toyota-Black-700);
+    margin-bottom: var(--space-6);
+    margin-top: var(--space-8);
+}

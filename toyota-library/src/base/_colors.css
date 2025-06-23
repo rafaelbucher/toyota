@@ -1,0 +1,18 @@
+:root {
+    
+    --Toyota-Black-100: #F5F5F5;
+    --Toyota-Black-200: #EFEFEF;
+    --Toyota-Black-300: #E4E4E4;
+    --Toyota-Black-400: #BEBEC1;
+
+    --Toyota-Black-600: #878D91;
+    --Toyota-Black-700: #6C7073;
+    --Toyota-Black-800: #2C2830;
+    --Toyota-Black-900: #000000;
+
+
+    --Toyota-Brand: #E60012;
+    --Toyota-White: #FFFFFF;
+    --Toyota-Black: var(--Toyota-Black-900);
+
+}

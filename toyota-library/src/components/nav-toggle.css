@@ -1,0 +1,287 @@
+.menuToggle {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.menuToggle a {
+  text-decoration: none;
+  color: var(--Toyota-White);
+  transition: all 0.3s ease;
+}
+.menuToggle a:hover {
+  color: var(--Toyota-Black-800);
+}
+
+.menuToggle input,
+.menuToggle img {
+  display: block;
+  width: 28px;
+  height: 32px;
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 1;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+.menuToggle img {
+  opacity: 1;
+  width: 28px;
+  height: auto;
+}
+
+/*
+.menuToggle span {
+  position: relative;
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+.menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+.menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+.menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: var(--Toyota-Black-800);
+}
+.menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+.menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+*/
+
+.menuToggle input:checked ~ .menuItem {
+  transform: none;
+}
+
+.menuItem {
+  position: absolute;
+  width: calc(300px - 12px);
+  height: calc(100vh - 152px);
+  padding: 24px;
+  padding-top: 192px;
+  background: var(--Toyota-Brand);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  margin: -4px 0;
+}
+
+.menuItem p {
+  color: var(--Toyota-White);
+}
+
+.menuItem li {
+  margin: 4px 0;
+}
+
+.menu--left {
+  position: relative;
+  width: 50%;
+}
+.menu--left .menuToggle {
+  left: 0;
+}
+.menu--left .menuToggle input {
+  left: 12px;
+  z-index: 10;
+}
+.menu--left .menuToggle span {
+  left: 50px;
+}
+.menu--left .menuItem {
+  left: 50px;
+  margin: -64px 0 0 -50px;
+  transform: translate(-100%, 0);
+}
+
+.menu--right .menuToggle {
+  position: fixed;
+  right: 0;
+}
+.menu--right .menuToggle input {
+  right: 50px;
+}
+.menu--right .menuToggle span {
+  right: 50px;
+}
+.menu--right .menuItem {
+  right: 0;
+  margin: -100px 0 0 0;
+  transform: translate(100%, 0);
+}
+.menu--right .menuItem li a:hover {
+  padding-left: 5px;
+}
+
+.menu--bottom--right .menuToggle {
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.menu--bottom--right .menuToggle input {
+  right: 50px;
+  bottom: 50px;
+  top: auto;
+}
+.menu--bottom--right .menuToggle input:checked ~ .menuItem {
+  transform: scale(1);
+}
+.menu--bottom--right .menuToggle input:checked ~ .menuItem li:nth-child(1) {
+  -webkit-animation: text-slide-in 0.2s;
+  -moz-animation: text-slide-in 0.2s;
+  animation: text-slide-in 0.2s;
+}
+.menu--bottom--right .menuToggle input:checked ~ .menuItem li:nth-child(2) {
+  -webkit-animation: text-slide-in 0.3s;
+  -moz-animation: text-slide-in 0.3s;
+  animation: text-slide-in 0.3s;
+}
+.menu--bottom--right .menuToggle input:checked ~ .menuItem li:nth-child(3) {
+  -webkit-animation: text-slide-in 0.4s;
+  -moz-animation: text-slide-in 0.4s;
+  animation: text-slide-in 0.4s;
+}
+.menu--bottom--right .menuToggle input:checked ~ .menuItem li:nth-child(4) {
+  -webkit-animation: text-slide-in 0.5s;
+  -moz-animation: text-slide-in 0.5s;
+  animation: text-slide-in 0.5s;
+}
+.menu--bottom--right .menuToggle input:checked ~ .menuItem li:nth-child(5) {
+  -webkit-animation: text-slide-in 0.6s;
+  -moz-animation: text-slide-in 0.6s;
+  animation: text-slide-in 0.6s;
+}
+.menu--bottom--right .menuToggle span {
+  right: 50px;
+  bottom: 50px;
+  top: auto;
+}
+.menu--bottom--right .menuItem {
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 125px;
+  transform-origin: bottom right;
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s, visibility 0s 0s;
+  -moz-transition: -moz-transform 0.3s, visibility 0s 0s;
+  transition: transform 0.3s, visibility 0s 0s;
+}
+.menu--bottom--right .menuItem li {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.menu--bottom--right .menuItem li a:hover {
+  padding-left: 5px;
+}
+
+.menu--bottom--left .menuToggle {
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.menu--bottom--left .menuToggle input {
+  left: 50px;
+  bottom: 50px;
+  top: auto;
+}
+.menu--bottom--left .menuToggle input:checked ~ .menuItem {
+  transform: scale(1);
+}
+.menu--bottom--left .menuToggle input:checked ~ .menuItem li:nth-child(1) {
+  -webkit-animation: text-slide-in 0.2s;
+  -moz-animation: text-slide-in 0.2s;
+  animation: text-slide-in 0.2s;
+}
+.menu--bottom--left .menuToggle input:checked ~ .menuItem li:nth-child(2) {
+  -webkit-animation: text-slide-in 0.3s;
+  -moz-animation: text-slide-in 0.3s;
+  animation: text-slide-in 0.3s;
+}
+.menu--bottom--left .menuToggle input:checked ~ .menuItem li:nth-child(3) {
+  -webkit-animation: text-slide-in 0.4s;
+  -moz-animation: text-slide-in 0.4s;
+  animation: text-slide-in 0.4s;
+}
+.menu--bottom--left .menuToggle input:checked ~ .menuItem li:nth-child(4) {
+  -webkit-animation: text-slide-in 0.5s;
+  -moz-animation: text-slide-in 0.5s;
+  animation: text-slide-in 0.5s;
+}
+.menu--bottom--left .menuToggle input:checked ~ .menuItem li:nth-child(5) {
+  -webkit-animation: text-slide-in 0.6s;
+  -moz-animation: text-slide-in 0.6s;
+  animation: text-slide-in 0.6s;
+}
+.menu--bottom--left .menuToggle span {
+  left: 50px;
+  bottom: 50px;
+  top: auto;
+}
+.menu--bottom--left .menuItem {
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 125px;
+  transform-origin: bottom left;
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s, visibility 0s 0s;
+  -moz-transition: -moz-transform 0.3s, visibility 0s 0s;
+  transition: transform 0.3s, visibility 0s 0s;
+}
+.menu--bottom--left .menuItem li {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.menu--bottom--left .menuItem li a:hover {
+  padding-left: 5px;
+}
+
+@keyframes text-slide-in {
+  0% {
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

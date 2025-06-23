@@ -1,0 +1,48 @@
+.header {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 64px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: var(--Toyota-White);
+}
+
+.header__logo {
+    position: relative;
+    z-index: 1000;
+    background-color: var(--Toyota-Brand);
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+}
+
+.header__logo img {
+    height: auto;
+    width: 100%;
+}
+
+.section__title {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-2xl);
+}
+
+.header__title {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-2xl);
+    margin-top: -3px;
+    margin-left: 24px;
+}
+
+.header__title span {
+    font-family: var(--font-family-primary);
+    text-transform: uppercase;
+}
+
+.main {
+    padding: 121px;
+}

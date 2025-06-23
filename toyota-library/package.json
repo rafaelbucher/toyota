@@ -1,0 +1,49 @@
+{
+  "name": "toyota-library",
+  "version": "1.0.0",
+  "description": "Une librairie de composants pour Toyota",
+  "main": "dist/toyota-library.css",
+  "files": [
+    "dist/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node tools/build.js",
+    "build-docs": "node tools/build-docs.js",
+    "dev": "npm-run-all --parallel watch serve",
+    "watch": "node tools/watch.js",
+    "serve": "http-server -p 8080 -a localhost -o",
+    "clean": "rimraf dist/*",
+    "prebuild": "npm run clean",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "css",
+    "components",
+    "ui",
+    "framework",
+    "design-system"
+  ],
+  "author": "nortis",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/votre-username/ma-librairie-css.git"
+  },
+  "homepage": "https://votre-username.github.io/ma-librairie-css",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "chokidar": "^3.5.3",
+    "cssnano": "^6.0.1",
+    "http-server": "^14.1.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "rimraf": "^5.0.5"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10"
+  }
+}

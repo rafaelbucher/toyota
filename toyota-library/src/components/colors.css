@@ -1,0 +1,67 @@
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+    margin: var(--space-6) 0;
+}
+
+.color-card {
+    background: var(--Toyota-White);
+    border: 2px solid var(--Toyota-Black-200);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.color-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--Toyota-Brand);
+}
+
+.color-swatch {
+    font-family: var(--font-family-secondary);
+    height: 120px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-swatch::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, transparent 48%, rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.1) 51%, transparent 52%);
+}
+
+.color-info {
+    padding: var(--space-4);
+}
+
+.color-name {
+    font-family: var(--font-family-secondary);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--Toyota-Black-800);
+    margin-bottom: var(--space-2);
+}
+
+.color-value {
+    font-family: var(--font-family-mono);
+    font-size: 0.875rem;
+    color: var(--Toyota-Black-600);
+    background: var(--Toyota-Black-100);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-base);
+    display: inline-block;
+}
+
+.color-contrast {
+    font-family: var(--font-family-mono);
+    margin-top: var(--space-2);
+    font-size: 0.75rem;
+    color: var(--Toyota-Black-700);
+}

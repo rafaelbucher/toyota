@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "ToyotaType-Book";
+    src:
+            local("ToyotaType"),
+            url("../../fonts/ToyotaType-Book.eot") format("opentype"),
+            url("../../fonts/ToyotaType-Book.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ToyotaType-Light";
+    src:
+            local("ToyotaType"),
+            url("../../fonts/ToyotaType-Light.eot") format("opentype"),
+            url("../../fonts/ToyotaType-Light.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ToyotaType-Bold";
+    src:
+            local("ToyotaType"),
+            url("../../fonts/ToyotaType-Bold.eot") format("opentype"),
+            url("../../fonts/ToyotaType-Bold.woff") format("woff");
+    font-weight: normal;
+} 

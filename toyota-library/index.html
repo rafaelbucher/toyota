@@ -1,0 +1,337 @@
+<!-- filepath: /Users/admin/Documents/WORK/NORTIS/toyota/toyota-library/docs/index.ejs -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Toyota Library Demo</title>
+  <link rel="stylesheet" href="./dist/toyota-library.css">
+</head>
+<body class="container">
+  <header class="header">
+    
+    <div class="header__logo">
+        <img src="../img/toyota-logo.avif" alt="Logo Toyota">
+    </div>
+    <h1 class="header__title">
+        Toyota Library
+        <span> / NORTIS</span>
+    </h1>
+
+</header>
+
+<nav class="menu--left" role="navigation">
+    <div class="menuToggle">
+        <input type="checkbox"/>
+        <img src="../img/menu-toggle.png" alt="Icon menu toggle">
+        <ul class="menuItem">
+            <li><p class="typography-h4">Tokens</p></li>
+            <li><a class="typography-h5 uppercase" href="#colors">Colors</a></li>
+            <li><a class="typography-h5 uppercase" href="#typography">Typography</a></li>
+        </ul>
+    </div>
+</nav>
+
+  <main class="main">
+    <section class="section" id="colors">
+
+    <h2 class="section__title">Colors Tokens</h2>
+
+    <h3 class="typography-h5 uppercase">Colors Brand</h3>
+
+    <div class="section-grid">
+
+        <div class="color-card clickable" onclick="copyToClipboard('--Toyota-Brand')">
+            <div class="color-swatch" style="background-color: var(--Toyota-Brand); color: var(--Toyota-White);">
+                <span style="font-weight: 600; font-size: 1.25rem;">TOYOTA</span>
+            </div>
+            <div class="color-info">
+                <div class="color-name">Toyota Brand</div>
+                <div class="color-value">--Toyota-Brand</div>
+                <div class="color-value" style="margin-top: 4px;">#E60012</div>
+                <div class="color-contrast">Rouge iconique</div>
+            </div>
+        </div>
+
+        <div class="color-card clickable" onclick="copyToClipboard('--Toyota-White')">
+            <div class="color-swatch" style="background-color: var(--Toyota-White); color: var(--Toyota-Black-800); border: 1px solid var(--Toyota-Black-200);">
+                <span style="font-weight: 600;">WHITE</span>
+            </div>
+            <div class="color-info">
+                <div class="color-name">Toyota White</div>
+                <div class="color-value">--Toyota-White</div>
+                <div class="color-value" style="margin-top: 4px;">#FFFFFF</div>
+                <div class="color-contrast">Surfaces principales</div>
+            </div>
+        </div>
+
+        <div class="color-card clickable" onclick="copyToClipboard('--Toyota-Black')">
+            <div class="color-swatch" style="background-color: var(--Toyota-Black); color: var(--Toyota-White);">
+                <span style="font-weight: 600;">BLACK</span>
+            </div>
+            <div class="color-info">
+                <div class="color-name">Toyota Black</div>
+                <div class="color-value">var(--Toyota-Black-900)</div>
+                <div class="color-contrast">Alias sémantique</div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="typography-h5 uppercase">Grey Color Palete</h3>
+    
+    <div class="section-grid">
+
+        <div class="color-card clickable" onclick="copyToClipboard('--Toyota-Black-100')">
+            <div class="color-swatch" style="background-color: var(--Toyota-Black-100); color: var(--Toyota-Black-800);">
+                <span style="font-weight: 600;">100</span>
+            </div>
+            <div class="color-info">
+                <div class="color-name">Toyota Black 100</div>
+                <div class="color-value">--Toyota-Black-100</div>
+                <div class="color-value" style="margin-top: 4px;">#F5F5F5</div>
+                <div class="color-contrast">Arrière-plans très clairs</div>
+            </div>
+        </div>
+
+        <div class="color-card clickable" onclick="copyToClipboard('--Toyota-Black-200')">
+            <div class="color-swatch" style="background-color: var(--Toyota-Black-200); color: var(--Toyota-Black-800);">
+                <span style="font-weight: 600;">200</span>
+            </div>
+            <div class="color-info">
+                <div class="color-name">Toyota Black 200</div>
+                <div class="color-value">--Toyota-Black-200</div>
+                <div class="color-value" style="margin-top: 4px;">#EFEFEF</div>
+                <div class="color-contrast">Bordures subtiles</div>
+            </div>
+        </div>
+
+        <div class="color-card clickable" onclick="copyToClipboard('--Toyota-Black-300')">
+            <div class="color-swatch" style="background-color: var(--Toyota-Black-300); color: var(--Toyota-Black-800);">
+                <span style="font-weight: 600;">300</span>
+            </div>
+            <div class="color-info">
+                <div class="color-name">Toyota Black 300</div>
+                <div class="color-value">--Toyota-Black-300</div>
+                <div class="color-value" style="margin-top: 4px;">#E4E4E4</div>
+                <div class="color-contrast">Séparateurs</div>
+            </div>
+        </div>
+
+        <div class="color-card clickable" onclick="copyToClipboard('--Toyota-Black-400')">
+            <div class="color-swatch" style="background-color: var(--Toyota-Black-400); color: var(--Toyota-Black-800);">
+                <span style="font-weight: 600;">400</span>
+            </div>
+            <div class="color-info">
+                <div class="color-name">Toyota Black 400</div>
+                <div class="color-value">--Toyota-Black-400</div>
+                <div class="color-value" style="margin-top: 4px;">#BEBEC1</div>
+                <div class="color-contrast">Éléments désactivés</div>
+            </div>
+        </div>
+
+        <div class="color-card clickable" onclick="copyToClipboard('--Toyota-Black-600')">
+            <div class="color-swatch" style="background-color: var(--Toyota-Black-600); color: var(--Toyota-White);">
+                <span style="font-weight: 600;">600</span>
+            </div>
+            <div class="color-info">
+                <div class="color-name">Toyota Black 600</div>
+                <div class="color-value">--Toyota-Black-600</div>
+                <div class="color-value" style="margin-top: 4px;">#878D91</div>
+                <div class="color-contrast">Texte secondaire</div>
+            </div>
+        </div>
+
+        <div class="color-card clickable" onclick="copyToClipboard('--Toyota-Black-700')">
+            <div class="color-swatch" style="background-color: var(--Toyota-Black-700); color: var(--Toyota-White);">
+                <span style="font-weight: 600;">700</span>
+            </div>
+            <div class="color-info">
+                <div class="color-name">Toyota Black 700</div>
+                <div class="color-value">--Toyota-Black-700</div>
+                <div class="color-value" style="margin-top: 4px;">#6C7073</div>
+                <div class="color-contrast">Icônes, labels</div>
+            </div>
+        </div>
+
+        <div class="color-card clickable" onclick="copyToClipboard('--Toyota-Black-800')">
+            <div class="color-swatch" style="background-color: var(--Toyota-Black-800); color: var(--Toyota-White);">
+                <span style="font-weight: 600;">800</span>
+            </div>
+            <div class="color-info">
+                <div class="color-name">Toyota Black 800</div>
+                <div class="color-value">--Toyota-Black-800</div>
+                <div class="color-value" style="margin-top: 4px;">#2C2830</div>
+                <div class="color-contrast">Texte principal</div>
+            </div>
+        </div>
+
+        <div class="color-card clickable" onclick="copyToClipboard('--Toyota-Black-900')">
+            <div class="color-swatch" style="background-color: var(--Toyota-Black-900); color: var(--Toyota-White);">
+                <span style="font-weight: 600;">900</span>
+            </div>
+            <div class="color-info">
+                <div class="color-name">Toyota Black 900</div>
+                <div class="color-value">--Toyota-Black-900</div>
+                <div class="color-value" style="margin-top: 4px;">#000000</div>
+                <div class="color-contrast">Texte haute emphase</div>
+            </div>
+        </div>
+    </div>
+
+</section>
+    <!-- Font Families Section -->
+<section class="section" id="typography">
+    
+    <h2 class="section__title">Typography Tokens</h2>
+
+    <h3 class="typography-h5 uppercase">Font Families</h3>
+    
+    <div class="token-grid">
+        <div class="token-card">
+            <div class="token-header">
+                <span class="token-name">font-family-primary</span>
+            </div>
+            <div class="token-value">Avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif</div>
+            <div class="token-example">
+                <div style="font-family: var(--font-family-primary); font-size: var(--font-size-2xl); font-weight: var(--font-weight-bold);">
+                    TOYOTA - Primary Font
+                </div>
+                <p style="font-family: var(--font-family-primary); margin-top: 0.5rem;">
+                    Used for logo, headings and branding elements
+                </p>
+            </div>
+        </div>
+
+        <div class="token-card">
+            <div class="token-header">
+                <span class="token-name">font-family-primary</span>
+            </div>
+            <div class="token-value">Avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif</div>
+            <div class="token-example">
+                <div style="font-family: var(--font-family-primary); font-size: var(--font-size-2xl); font-weight: var(--font-weight-bold);">
+                    TOYOTA - Primary Font
+                </div>
+                <p style="font-family: var(--font-family-primary); margin-top: 0.5rem;">
+                    Used for logo, headings and branding elements
+                </p>
+            </div>
+        </div>
+        
+        <div class="token-card">
+            <div class="token-header">
+                <span class="token-name">font-family-secondary</span>
+            </div>
+            <div class="token-value">Toyota Type, Avenir, -apple-system, BlinkMacSystemFont, sans-serif</div>
+            <div class="token-example">
+                <div style="font-family: var(--font-family-secondary); font-size: var(--font-size-2xl); font-weight: var(--font-weight-medium);">
+                    General Content
+                </div>
+                <p style="font-family: var(--font-family-secondary); margin-top: 0.5rem;">
+                    Toyota Type system font for website content
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Font Weights Section -->
+<section class="section">
+    <h2 class="typography-h5 uppercase">Font Weights</h2>
+    
+    <div class="weight-showcase">
+        <div class="weight-item">
+            <div style="font-weight: var(--font-weight-light); font-size: var(--font-size-xl);">Aa</div>
+            <div class="token-name">Light (300)</div>
+        </div>
+        <div class="weight-item">
+            <div style="font-weight: var(--font-weight-regular); font-size: var(--font-size-xl);">Aa</div>
+            <div class="token-name">Regular (400)</div>
+        </div>
+        <div class="weight-item">
+            <div style="font-weight: var(--font-weight-medium); font-size: var(--font-size-xl);">Aa</div>
+            <div class="token-name">Medium (500)</div>
+        </div>
+        <div class="weight-item">
+            <div style="font-weight: var(--font-weight-bold); font-size: var(--font-size-xl);">Aa</div>
+            <div class="token-name">Bold (700)</div>
+        </div>
+        <div class="weight-item">
+            <div style="font-weight: var(--font-weight-black); font-size: var(--font-size-xl);">Aa</div>
+            <div class="token-name">Black (900)</div>
+        </div>
+    </div>
+</section>
+
+<!-- Font Sizes Section -->
+<section class="section">
+    <h2 class="typography-h5 uppercase">Font Sizes</h2>
+    
+    <div class="size-showcase">
+        <div class="size-item">
+            <span class="size-label">xs (12px)</span>
+            <span style="font-size: var(--font-size-xs);">Small annotations, disclaimers</span>
+        </div>
+        <div class="size-item">
+            <span class="size-label">sm (14px)</span>
+            <span style="font-size: var(--font-size-sm);">Secondary text, labels</span>
+        </div>
+        <div class="size-item">
+            <span class="size-label">base (16px)</span>
+            <span style="font-size: var(--font-size-base);">Base text, paragraphs</span>
+        </div>
+        <div class="size-item">
+            <span class="size-label">lg (18px)</span>
+            <span style="font-size: var(--font-size-lg);">Emphasized text</span>
+        </div>
+        <div class="size-item">
+            <span class="size-label">xl (20px)</span>
+            <span style="font-size: var(--font-size-xl);">Important subheadings</span>
+        </div>
+        <div class="size-item">
+            <span class="size-label">2xl (24px)</span>
+            <span style="font-size: var(--font-size-2xl);">Section titles</span>
+        </div>
+        <div class="size-item">
+            <span class="size-label">3xl (30px)</span>
+            <span style="font-size: var(--font-size-3xl);">Page titles</span>
+        </div>
+        <div class="size-item">
+            <span class="size-label">4xl (36px)</span>
+            <span style="font-size: var(--font-size-4xl);">Main titles</span>
+        </div>
+        <div class="size-item">
+            <span class="size-label">5xl (48px)</span>
+            <span style="font-size: var(--font-size-5xl);">Hero titles</span>
+        </div>
+    </div>
+</section>
+
+<!-- Typography Styles Section -->
+<section class="section">
+    <h2 class="typography-h5 uppercase">Typography Styles</h2>
+    
+    <div class="demo-section">
+        <h1 class="typography-h1">H1 Title - Hero Style</h1>
+        <h2 class="typography-h2">H2 Title - Main</h2>
+        <h3 class="typography-h3">H3 Title - Section</h3>
+        <h4 class="typography-h4">H4 Title - Subsection</h4>
+        
+        <p class="typography-body-large" style="margin: 1.5rem 0;">
+            <strong>Large body text</strong> - Used to emphasize important information or section introductions.
+        </p>
+        
+        <p class="typography-body" style="margin: 1rem 0;">
+            Base body text - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+        </p>
+        
+        <p class="typography-body-small" style="margin: 1rem 0;">
+            Secondary text - Complementary information or detailed descriptions.
+        </p>
+        
+        <p class="typography-caption" style="margin: 1rem 0;">
+            Caption or disclaimer - Legal mentions, copyright, etc.
+        </p>
+    </div>
+</section>
+  </main>
+</body>
+</html>
