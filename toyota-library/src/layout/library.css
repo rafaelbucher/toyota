@@ -46,3 +46,13 @@
 .main {
     padding: 121px;
 }
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0;
+    }
+    .main {
+        padding: 121px 24px 0 96px;
+    }
+    
+}
