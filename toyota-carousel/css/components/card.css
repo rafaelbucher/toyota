@@ -1,0 +1,180 @@
+.n-card {   
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    border: 1px solid var(--toyota-black-400);
+    cursor: pointer;
+    width: calc(100% - 2px);
+}
+
+.n-card--checked {
+    border: 3px solid var(--toyota-black-800);
+    background: var(--toyota-black-100);
+}
+
+.n-card--checked::after {
+    content: url(../../img/icons/icon-checked-solid.svg);
+    position: absolute;
+    top: .3rem;
+    right: .9rem;
+    display: block;
+    width: 1rem;
+}
+
+.n-card__discount {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--toyota-white);
+    background-color: var(--toyota-brenad);
+    border-radius: 6.25rem;
+    padding: 0.5rem;
+}
+
+.n-card__spec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.n-card__spec h3 {
+    color: var(--toyota-black-800);
+    font-size: 1.25rem;
+    font-family: "Toyota Type SemiBold";
+}
+
+.n-card__spec h3 span {
+    display: block;
+    color: #0C83E6;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.n-card__price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.n-card__price p:last-child {
+    text-align: right;
+}
+
+.n-card__price p span {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: .15rem;
+}
+
+.n-card__price p:last-child span {
+    justify-content: flex-end;
+}
+
+.n-card__price .n-text-line-through {
+    text-decoration: line-through;
+}
+
+.n-card__price .n-text-gray {
+    color: var(--toyota-black-600);
+}
+
+.n-card__price .n-flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.n-card__price .n-button-tooltip {
+    margin-right: .5rem;
+}
+
+.n-card-used {
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 1rem;
+    background: #FFF;
+    border: 1px solid var(--toyota-black-600);
+    width: calc(100% - 4px);
+}
+
+.n-card-used .n-card-used__header img {
+    width: 100%;
+    height: auto;
+}
+
+.n-card-used__content {
+    display: flex;
+    flex-direction: column;
+    padding: .75rem 1.5rem;
+    min-height: 14rem;
+}
+
+.n-card-used__content h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.n-card-used__content p {
+    color: var(--toyota-black-700);
+    font-size: 0.8rem;
+    line-height: 1.25rem; 
+}
+
+.n-card-used__content .n-card__localisation {
+    display: flex;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    margin: .25rem 0;
+}
+
+.n-card-used__content .n-card__localisation img {
+    margin-right: .25rem;
+}
+
+.n-card-used__content ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 1rem 0;
+}
+
+.n-card-used__content li {
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+}
+
+.n-card-used__content .n-card-used__price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.n-card-used__content .n-card-used__price p {
+    font-size: 1.125rem;
+    font-family: 'Toyota Type SemiBold';
+}
+
+.n-card-used__content .n-card-used__price span {
+    color: var(--Toyota-Black-600);
+    font-family: "Toyota Type";
+    font-size: 0.75rem;
+}
+
+.n-card-used__footer {
+    background: var(--Toyota-Black-800, #2C2830);
+    padding: .75rem 1.5rem;
+}
