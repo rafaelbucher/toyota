@@ -1,19 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title></title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
+        <title></title>
 
-  <body>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+
     
+    </head>
+
+    <body>
+
+        <div class="swiper n-hero n-hero--swiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/slider/toyota-slider-1.png" alt="Lorem Toyota Picsum 1" />
+                    <div class="swiper-content">
+                        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        <h3>Véhicules d'occasion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Aliquet venenatis pharetra malesuada et odio. Elit orci fermentum mauris odio molestie elit quam cras.</p>
+                        <button class="n-button n-button-outline" type="button">
+                            Lorem liupsum
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/slider/toyota-slider-2.png" alt="Lorem Toyota Picsum 1" />
+                    <div class="swiper-content">
+                        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        <h3>Véhicules d'occasion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Aliquet venenatis pharetra malesuada et odio. Elit orci fermentum mauris odio molestie elit quam cras.</p>
+                        <button class="n-button n-button-outline" type="button">
+                            Lorem liupsum
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/slider/toyota-slider-1.png" alt="Lorem Toyota Picsum 1" />
+                    <div class="swiper-content">
+                        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        <h3>Véhicules d'occasion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Aliquet venenatis pharetra malesuada et odio. Elit orci fermentum mauris odio molestie elit quam cras.</p>
+                        <button class="n-button n-button-outline" type="button">
+                            Lorem liupsum
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-group">
+                <div class="swiper-button-prev">
+                    <img src="./img/icons/arrow-narrow-left.svg" alt="previous slide">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="./img/icons/arrow-narrow-right.svg" alt="next slide">
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
     
+    <script>
+        var swiper = new Swiper(".swiper", {
+            spaceBetween: 0,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
 
-  </body>
-
+        /*
+        var swiper = new Swiper('.swiper', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+                },
+                1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+                },
+            },
+        }
+    )*/
+    </script>
 </html>

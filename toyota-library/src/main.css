@@ -5,7 +5,7 @@
 @import url(../src/base/_utilities.css);
 
 @import url(../src/components/colors.css);
-@import url(../src/components/nav-toggle.css);
+@import url(../src/components/swiper.css);
 
 @import url(../src/layout/layout.css);
 @import url(../src/layout/library.css);
