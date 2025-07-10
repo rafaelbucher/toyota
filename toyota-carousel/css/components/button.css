@@ -21,160 +21,36 @@
     background-color: var(--toyota-black-400);
 }
 
-.n-button__loader {
-    display: none;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    position: relative;
-    animation: rotate 1s linear infinite;
+
+.n-button--highlight {
+  display: flex;
+  height: 50px;
+  padding: 20px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--toyota-white);
+  text-align: center;
+  font-family: "Toyota Type";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px; /* 342.857% */
+  background-color: var(--toyota-brand);
+  border-radius: 0%;
+  border: none;
+  transition: all 0.15s ease-in-out;
 }
 
-.n-button__loader::before {
-    content: "";
-    box-sizing: border-box;
-    position: absolute;
-    inset: 0px;
-    border-radius: 50%;
-    border: 5px solid #FFF;
-    animation: prixClipFix 2s linear infinite;
+.n-button--highlight:hover {
+    background-color: var(--toyota-black-800);
 }
 
-@keyframes rotate {
-    100%   {transform: rotate(360deg)}
-}
 
-@keyframes prixClipFix {
-    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
-    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
-    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
-    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
-    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
-}
-
-.n-button--loaded .n-button__loader {
-    display: block;
-}
-
-.n-button-outline {
-    background-color: #fff;
-    color: var(--toyota-black-800);
-}
-
-.n-button-outline:hover {
-    background-color: var(--toyota-black-100);
-}
-
-.n-button-outline[disabled] {
-    border-color: var(--toyota-black-400);
-    background-color: #fff;
-    color: var(--toyota-black-400);
-}
-
-.n-button--large {
-    padding: .75rem 3rem;
-}
-
-.n-button--icon-right,
-.n-button--icon-left {
-    position: relative;
-}
-
-.n-button--icon-right::after {
-    content: url(../../img/icons/chevron-right.svg);
-    position: absolute;
-    top: .55rem;
-    right: .5rem;
-}
-
-.n-button--icon-left::after {
-    content: url(../../img/icons/chevron-left.svg);
-    position: absolute;
-    top: .55rem;
-    left: .5rem;
-}
-
-.n-button.n-button--icon-left::after,
-.n-button-outline.n-button--icon-right::after {
-    content: url(../../img/icons/chevron-left.svg);
-    transform: rotate(180deg);
-    top: .35rem;
-}
-
-.n-button.n-button--icon-left::after {
-    content: url(../../img/icons/chevron-right.svg);
-}
-
-.n-button-outline.n-button--icon-left::after {
-    content: url(../../img/icons/chevron-left.svg);
-    transform: rotate(0);
-    top: .55rem;
-}
-
-.n-group-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 2rem 0;
-}
-
-.n-group-button--center {
-    justify-content: center;
-}
-
-.n-group-button .n-button {
-    width: 100%;
-    margin: .5rem 0;
-}
-
-.n-button-marker {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    appearance: none;
-    border: none;
-    border-radius: .5rem;
-    padding: .5rem;
-    color: var(--toyota-black-700);
-    font-size: .75rem;
-    background-color: var(--toyota-black-100);
-}
-
-.n-button-marker img {
-    margin-right: .5rem;
-}
-
-.n-button--full {
-    width: 100% !important;
-}
-
-.n-button-tooltip {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 17px;
-    height: 17px;
-    background-color: transparent;
-    border: none;
-}
-
-.n-button-tooltip:hover {
-    background-color: transparent;
-}
-
-#button-checkbox + label {
-    padding-left: 0;
-}
-
-@media screen and (min-width: 991px) {
-    .n-group-button {
-        flex-direction: row;
-        margin: 2.5rem 0;
-    }
-
-    .n-group-button .n-button {
-        margin: 0;
-        width: auto;
+@media screen and (max-width: 768px) {
+    .n-button {
+        height: 36px;
+        padding: 14px 22px;
+        font-size: 11px;
     }
 }

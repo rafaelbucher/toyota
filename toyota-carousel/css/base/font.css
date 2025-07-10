@@ -24,8 +24,3 @@
     url("../../fonts/ToyotaType-Semibold.woff") format("woff");
   font-weight: 600;
 }
-
-html, 
-body {
-    font-family: "Toyota Type";
-}

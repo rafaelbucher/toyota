@@ -5,9 +5,11 @@
 @import url(./base//headline.css);
 @import url(./base//utilities.css);
 
-/* LAYOUT CSS */
-@import url(./layout/layout.css);
-
 /* COMPONENTS CSS */
 @import url(./components/button.css);
 @import url(./components/swiper.css);
+
+
+html, body {
+    font-family: "Toyota Type", sans-serif;
+}
