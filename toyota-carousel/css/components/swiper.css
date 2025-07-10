@@ -6,6 +6,16 @@
   background-color: #282830;
 }
 
+.swiper-clickable {
+  cursor: pointer;
+  width: calc(100vw - 550px);
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
 .swiper-slide::before {
   content: "";
   position: absolute;
@@ -143,6 +153,11 @@
 }
 
 @media screen and (max-width: 1280px) {
+
+  .swiper-clickable {
+    width: calc(100vw - 450px);
+  }
+
   .swiper-content {
     right: 50px;
   }
@@ -155,6 +170,12 @@
 @media screen and (max-width: 768px) {
   .swiper {
     height: 90svh;
+  }
+
+  .swiper-clickable {
+    cursor: pointer;
+    width: 100svw;
+    height: 45svh;
   }
 
   .swiper-slide::before {
