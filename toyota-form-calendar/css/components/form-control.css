@@ -5,12 +5,10 @@
 
 .n-form-toyota__fieldset {
     margin-bottom: 2.5rem;
-    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    border-bottom: 1px solid #BEBEC1;
 }
 
 .n-form-toyota__fieldset p:last-child {
