@@ -1,0 +1,13 @@
+:root {
+    --toyota-black-900: rgba(0, 0, 0, 1);
+    --toyota-black-800: rgba(44, 40, 48, 1);
+    --toyota-black-700: rgba(108, 112, 115, 1);
+    --toyota-black-600: rgba(135, 141, 145, 1);
+    --toyota-black-500: rgba(168, 170, 172, 1);
+    --toyota-black-400: rgba(190, 190, 193, 1);
+    --toyota-black-300: rgba(228, 228, 228, 1);
+    --toyota-black-200: rgba(239, 239, 239, 1);
+    --toyota-black-100: rgba(245, 245, 245, 1);
+    --toyota-white: rgba(255, 255, 255, 1);
+    --toyota-brand: rgba(255, 32, 62, 1);
+}

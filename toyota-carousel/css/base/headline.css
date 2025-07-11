@@ -1,0 +1,92 @@
+.n-headline-1 {
+    font-family: "Toyota Type SemiBold";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 2.5rem 0;
+}
+
+.n-headline-2,
+.n-headline-2--highlight {
+    font-family: "Toyota Type SemiBold";
+    line-height: 120%;
+    font-size: 1.5rem;
+    margin: .68rem 0;
+}
+
+.n-headline-1--light,
+.n-headline-2--light {
+    color: var(--toyota-white);
+}
+
+.n-headline-1--highlight,
+.n-headline-2--highlight {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Toyota Type";
+}
+
+.n-headline-3 {
+    display: block;
+    font-family: "Toyota Type SemiBold";
+    color: var(--toyota-black-900);
+    font-size: 1rem;
+    line-height: 120%;
+    margin-bottom: 1rem;
+}
+
+.n-headline-4 {
+    display: block;
+    font-family: "Toyota Type Light";
+    color: var(--toyota-black-900);
+    font-size: 1.4rem;
+    line-height: 120%;
+    margin-bottom: 1rem;
+}
+
+.n-headline-2 span,
+.n-paragraph {
+    color: var(--toyota-black-700);
+    font-size: 0.875rem;
+    line-height: 120%;
+}
+
+.n-paragraph b {
+    font-family: "Toyota Type SemiBold";
+}
+
+.n-parapgraph--light {
+    color: var(--toyota-white);
+}
+
+.n-header--center .n-headline-1 {
+    margin-bottom: 1rem;
+}
+
+/* BEGIN - code to insert */
+.n-paragraph--highlight {
+    color: var(--toyota-black-800);
+    font-family: "Toyota Type SemiBold";
+    font-size: 1rem;
+    line-height: 120%;
+    margin-bottom: .75rem;
+}
+
+.n-paragraph--grey {
+    color: var(--toyota-black-700);
+}
+/* END - code to insert */
+
+
+@media screen and (min-width: 991px) {
+    .n-headline-1,
+    .n-headline-1--highlight {
+        font-size: 2.2rem;
+    }
+    .n-headline-2,
+    .n-headline-2--highlight {
+        font-size: 1.5rem;
+        margin: 2.5rem 0;
+    }
+}
