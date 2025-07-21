@@ -1,4 +1,5 @@
-.n-button {
+.n-button,
+a.n-button {
     display: block;
     cursor: pointer;
     border: 1px solid var(--toyota-black-800);
@@ -8,6 +9,18 @@
     font-weight: 600;
     color: #fff;  
     border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.n-button {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    margin: 0 !important;
+    font-family: 'Toyota Type SemiBold';
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .n-button:hover {
@@ -180,6 +193,11 @@
 
     .n-button--large {
         padding: .75rem 3rem;
+    }
+    
+    a.n-button {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
     
     .n-group-button {
