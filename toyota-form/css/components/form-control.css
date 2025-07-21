@@ -21,6 +21,11 @@
     grid-template-columns: none;
 }
 
+.n-form-toyota__fieldset--two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .n-form-toyota__fieldset:last-child {
     margin-bottom: 0;
 }
