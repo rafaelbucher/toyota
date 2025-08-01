@@ -21,7 +21,7 @@
     grid-template-columns: none;
 }
 
-.n-form-toyota__fieldset--two-column {
+.n-form-toyota__group-fieldset {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -389,5 +389,10 @@
     .n-form-radio-button--custom .n-radio + label {
         margin: 0 .75rem;
         width: auto;
+    }
+
+    .n-form-toyota__group-fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr    
     }
 }

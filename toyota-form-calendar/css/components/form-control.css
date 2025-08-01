@@ -26,10 +26,6 @@
     grid-template-columns: none;
 }
 
-.n-form-toyota__fieldset:last-child {
-    margin-bottom: 0;
-}
-
 .n-form-toyota__fieldset--highlight {
     display: block;
     border-radius: 1rem;
@@ -53,6 +49,7 @@
     width: 100%;
     justify-content: flex-end;
     flex-direction: column;  
+    margin-bottom:16px;
 }
 
 .n-form-toyota__control:last-child {
@@ -346,10 +343,14 @@
 }
 
 
-.n-form-toyota__fieldset--two-column {
+.n-form-toyota__group-fieldset {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1.5rem;
+}
+
+.n-form-toyota__group-fieldset .n-form-toyota__fieldset {
+    justify-content: flex-start;;
 }
 
 .n-form-toyota__fieldset--highlight .n-form-toyota__control {  
@@ -369,7 +370,7 @@
         display: block;
     }
 
-    .n-form-toyota__fieldset--two-column {
+    .n-form-toyota__group-fieldset {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -387,10 +388,6 @@
 
     .n-form-toyota__fieldset--three-col {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .n-form-toyota__control {
-        margin-bottom: 8px; 
     }
 
     .n-form-toyota__control:last-child {

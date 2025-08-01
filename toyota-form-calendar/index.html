@@ -77,94 +77,100 @@
                 <h2 id="form-heading" class="visually-hidden">Formulaire de sélection du véhicule</h2>
                 
                 <form class="n-form-toyota" novalidate>
-                    <fieldset class="n-form-toyota__fieldset n-form-toyota__fieldset--two-column">
-                        <legend class="visually-hidden">Informations sur le véhicule</legend>
 
-                        <div class="n-form-toyota__control">
-                            <label for="vehicle-select">
-                                Véhicule
-                                <span class="input-required" aria-label="champ obligatoire">*</span>
-                            </label>
-                            <select name="vehicle" id="vehicle-select" class="n-form-select" required aria-describedby="vehicle-error">
-                                <option value="">Sélectionnez un véhicule</option>
-                                <option value="4Runner">4Runner</option>
-                                <option value="4runner-hybrid">4Runner Hybrid</option>
-                                <option value="avalon">Avalon</option>
-                                <option value="c-hr">C-HR</option>
-                                <option value="camry-hybride">Camry hybride</option>
-                                <option value="autres">Autres modèles</option>
-                            </select>
-                            <span class="n-form-toyota__valid-icon" aria-hidden="true">
-                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
-                                    <path d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                            <div id="vehicle-error" class="error-message" role="alert" aria-live="polite"></div>
-                        </div>
+                    <div class="n-form-toyota__group-fieldset">
 
-                        <div class="n-form-toyota__control">
-                            <label for="average-input">Kilométrage actuel</label>
-                            <input type="number" id="average-input" name="averageMileage" min="0" max="512000" class="n-form-text" placeholder="20000" aria-placeholder="20000" aria-describedby="average-help">
-                            <span class="n-form-toyota__valid-icon" aria-hidden="true">
-                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
-                                    <path d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                        </div>
+                        <fieldset class="n-form-toyota__fieldset">
+                            <legend class="visually-hidden">Informations sur le véhicule</legend>
 
-                        <div class="n-form-toyota__control">
-                            <label for="model-select">
-                                Modèle
-                                <span class="input-required" aria-label="champ obligatoire">*</span>
-                            </label>
-                            <select name="model" id="model-select" class="n-form-select" disabled required aria-describedby="model-error model-help">
-                                <option value="">Sélectionner le modèle</option>
-                                <option value="4runner">4Runner</option>
-                                <option value="autres">Autres modèles</option>
-                            </select>
-                            <!--
-                            <div id="model-help" class="help-text">Ce champ sera activé après avoir sélectionné un véhicule et une année</div>
-                            -->
-                            <span class="n-form-toyota__valid-icon" aria-hidden="true">
-                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
-                                    <path d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                            <div id="model-error" class="error-message" role="alert" aria-live="polite"></div>
-                        </div>
+                            <div class="n-form-toyota__control">
+                                <label for="vehicle-select">
+                                    Véhicule
+                                    <span class="input-required" aria-label="champ obligatoire">*</span>
+                                </label>
+                                <select name="vehicle" id="vehicle-select" class="n-form-select" required aria-describedby="vehicle-error">
+                                    <option value="">Sélectionnez un véhicule</option>
+                                    <option value="4Runner">4Runner</option>
+                                    <option value="4runner-hybrid">4Runner Hybrid</option>
+                                    <option value="avalon">Avalon</option>
+                                    <option value="c-hr">C-HR</option>
+                                    <option value="camry-hybride">Camry hybride</option>
+                                    <option value="autres">Autres modèles</option>
+                                </select>
+                                <span class="n-form-toyota__valid-icon" aria-hidden="true">
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
+                                        <path d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div id="vehicle-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
 
-                        <div class="n-form-toyota__control">
-                            <label for="average-car-input">Kilométrage du véhicule</label>
-                            <input type="number" id="average-car-input" name="averageCarMileage" min="0" max="512000" placeholder="12000" aria-placeholder="12000" class="n-form-text" aria-describedby="average-help">
-                            <span class="n-form-toyota__valid-icon" aria-hidden="true">
-                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
-                                    <path d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                        </div>
+                            <div class="n-form-toyota__control">
+                                <label for="model-select">
+                                    Modèle
+                                    <span class="input-required" aria-label="champ obligatoire">*</span>
+                                </label>
+                                <select name="model" id="model-select" class="n-form-select" disabled required aria-describedby="model-error model-help">
+                                    <option value="">Sélectionner le modèle</option>
+                                    <option value="4runner">4Runner</option>
+                                    <option value="autres">Autres modèles</option>
+                                </select>
+                                <span class="n-form-toyota__valid-icon" aria-hidden="true">
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
+                                        <path d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div id="model-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
 
-                        <div class="n-form-toyota__control">
-                            <label for="year-select">
-                                Année
-                                <span class="input-required" aria-label="champ obligatoire">*</span>
-                            </label>
-                            <select name="year" id="year-select" class="n-form-select" disabled required aria-describedby="year-error">
-                                <option value="">Sélectionner l'année</option>
-                                <option value="2025">2025</option>
-                                <option value="2024">2024</option>
-                                <option value="2023">2023</option>
-                                <option value="2022">2022</option>
-                                <option value="2021">2021</option>
-                            </select>
-                            <span class="n-form-toyota__valid-icon" aria-hidden="true">
-                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
-                                    <path d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                            <div id="year-error" class="error-message" role="alert" aria-live="polite"></div>
-                        </div>
+                            <div class="n-form-toyota__control">
+                                <label for="year-select">
+                                    Année
+                                    <span class="input-required" aria-label="champ obligatoire">*</span>
+                                </label>
+                                <select name="year" id="year-select" class="n-form-select" disabled required aria-describedby="year-error">
+                                    <option value="">Sélectionner l'année</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                </select>
+                                <span class="n-form-toyota__valid-icon" aria-hidden="true">
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
+                                        <path d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div id="year-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
+
+                        </fieldset>
                         
-                    </fieldset>
+                        <fieldset class="n-form-toyota__fieldset">
+
+                            <div class="n-form-toyota__control">
+                                <label for="average-input">Kilométrage actuel</label>
+                                <input type="number" id="average-input" name="averageMileage" min="0" max="512000" class="n-form-text" placeholder="20000" aria-placeholder="20000" aria-describedby="average-help">
+                                <span class="n-form-toyota__valid-icon" aria-hidden="true">
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
+                                        <path d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <div class="n-form-toyota__control">
+                                <label for="average-car-input">Kilométrage du véhicule</label>
+                                <input type="number" id="average-car-input" name="averageCarMileage" min="0" max="512000" placeholder="12000" aria-placeholder="12000" class="n-form-text" aria-describedby="average-help">
+                                <span class="n-form-toyota__valid-icon" aria-hidden="true">
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Validation réussie">
+                                        <path d="M12.237 1.16016L4.90365 8.49349L1.57031 5.16016" stroke="#4ACF98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            
+                        </fieldset>
+                        
+                    </div>
 
                     <fieldset class="n-form-toyota__fieldset n-form-toyota__fieldset--highlight">
                         <legend class="visually-hidden">Date du dernier entretien</legend>
